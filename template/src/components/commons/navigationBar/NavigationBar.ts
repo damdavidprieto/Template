@@ -9,6 +9,7 @@ export class NavigationBar extends LitElement {
                 display: flex;
                 background-color: #920000bf;
                 padding: 0.5rem 1rem;
+                box-shadow: 0px 0px 5px 0px #000000c5;
             }
             nav {
                 display:inline-flex;
