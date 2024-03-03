@@ -6,24 +6,21 @@ import '../components/commons/title/Title';
 
 @customElement('app-template-layout')
 export class TemplateLayout extends LitElement {
-    static styles = [
-        css`
-            :host {
-                display: block;
-            }
-        `
-    ];
     render() {
         return html`
             <app-header>
-                <app-title level=2>Header</app-title>
+                <app-navigation-bar>
+                    <app-title level=1>Header</app-title>
+                </app-navigation-bar>
             </app-header>
             <main>
                 <slot></slot>
             </main>
             <app-footer>
-                <app-title level=2>Footer</app-title>
+                <app-navigation-bar>
+                    <app-title level=1>Footer</app-title>
+                </app-navigation-bar>
             </app-footer>`
-            ;
+        ;
     }
 }
