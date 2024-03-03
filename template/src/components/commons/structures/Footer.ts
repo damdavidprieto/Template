@@ -6,8 +6,6 @@ export class Footer extends LitElement {
     static styles = [
         css`
             :host {
-                background-color: #920000bf;
-                display: flex;
                 position: fixed;
                 bottom: 0;
                 width: 100%;

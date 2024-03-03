@@ -6,7 +6,6 @@ export class Header extends LitElement {
     static styles = [
         css`
             :host {
-                background-color: #920000bf;
                 position: fixed;
                 top: 0;
                 right: 0;
