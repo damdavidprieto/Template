@@ -6,9 +6,11 @@ import '../components/commons/title/Title';
 import '../components/commons/navigationBar/NavigationBar';
 import '../components/commons/buttons/Button';
 import '../my-element';
+import '../components/commons/structures/Main';
 
 @customElement('app-template-layout')
 export class TemplateLayout extends LitElement {
+    
     static styles = [
         css`
             :host {
@@ -35,7 +37,7 @@ export class TemplateLayout extends LitElement {
         this.updateComplete.then(() => {
             //Ajustar el main a la altura del header
             const header = this.shadowRoot?.querySelector('app-header');
-            const main = this.shadowRoot?.querySelector('main');
+            const main = this.shadowRoot?.querySelector('app-main');
             if (header && main) {
                 const headerHeight = header.getBoundingClientRect().height;
                 main.style.paddingTop = `${headerHeight}px`;
@@ -55,9 +57,9 @@ export class TemplateLayout extends LitElement {
                     <app-button class="error">Button</app-button>
                 </app-navigation-bar>
             </app-header>
-            <main>
+            <app-main>
                 <slot></slot>
-            </main>
+            </app-main>
             <app-footer>
                 <app-navigation-bar>
                     <app-title level=1>Footer</app-title>

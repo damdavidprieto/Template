@@ -23,12 +23,14 @@ export class Button extends LitElement {
             button:hover {
                 background-color:#6b6b6b;
                 box-shadow: 0px 0px 5px 0px #000000c5;
-                transform: scale(1.05);
+                border:1px solid #10f704;
+                //transform: scale(1.05); no me gusta el escalado arriba para el boton
             }
             button:active {
                 background-color:#414141;
                 box-shadow: 0px 0px 5px 0px #000000c5;
-                transform: scale(.95);
+                transform: scale(.98);
+                border:1px solid #ffffff;
             }
             :host(.success) button {
                 background-color:#2ebe02;
