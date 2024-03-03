@@ -56,10 +56,6 @@ export class TemplateLayout extends LitElement {
             <app-footer>
                 <app-navigation-bar>
                     <app-title level=1>Footer</app-title>
-                    <app-title level=1>Footer</app-title>
-                    <app-title level=1>Footer</app-title>
-                    <app-title level=1>Footer</app-title>
-                    <app-title level=1>Footer</app-title>
                     <app-button class="error">Button Error</app-button>
                 </app-navigation-bar>
             </app-footer>`

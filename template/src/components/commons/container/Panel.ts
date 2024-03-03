@@ -10,13 +10,15 @@ export class Panel extends LitElement {
                 flex-direction: column;
                 padding: 0px 0px 5px 0px;
                 gap: 5px;
-                border: 2px solid #000;
+                border: 2px solid #d20101;
                 border-radius: 5px;
             }
             app-title {
-                border: 2px solid #000;
+                background-color:#9200007a;
+                border: 2px solid #d20101;
                 padding: 5px;
             }
+
         `
     ];
 
