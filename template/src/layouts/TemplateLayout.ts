@@ -47,12 +47,12 @@ export class TemplateLayout extends LitElement {
         return html`
             <app-header>
                 <app-navigation-bar>
-                    <app-title level=1>Header</app-title>
-                    <app-title level=1>Header</app-title>
-                    <app-title level=1>Header</app-title>
-                    <app-title level=1>Header</app-title>
-                    <app-title level=1>Header</app-title>
+                    <app-title level=1>Header templates</app-title>
                     <app-button>Button</app-button>
+                    <app-button class="success">Button</app-button>
+                    <app-button class="info">Button</app-button>
+                    <app-button class="warning">Button</app-button>
+                    <app-button class="error">Button</app-button>
                 </app-navigation-bar>
             </app-header>
             <main>
