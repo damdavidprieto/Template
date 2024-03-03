@@ -11,6 +11,9 @@ export class Title extends LitElement {
             :host {
                 display: block;
             }
+            h1, h2, h3, h4, h5 {
+                white-space: nowrap;
+            }
         `
     ];
 

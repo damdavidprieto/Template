@@ -1,22 +1,21 @@
 import { LitElement, html, css } from 'lit';
-import { customElement, property } from 'lit/decorators.js'
+import { customElement } from 'lit/decorators.js'
 
 @customElement('app-button')
 export class Button extends LitElement {
 
-    @property()
-    text: string = '';
-
     static styles = [
         css`
             :host {
-                display: block;
+                display: flex;
+                width: 100%;
             }
             button {
                 background-color:#979797;
                 border-radius: 5px;
                 padding: 5px 10px;
-                width: fit-content;
+                //width: fit-content;
+                width: 100%;
                 border:0px;
                 cursor: pointer;
                 box-shadow: 0px 0px 5px 0px #0000003c;
