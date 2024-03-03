@@ -13,7 +13,6 @@ export class Container extends LitElement {
             }
         `
     ];
-    //TODO: Ajustar el max-height en el update para tener en cuenta el tamaño del footer
     render() {
         return html`
             <slot></slot>

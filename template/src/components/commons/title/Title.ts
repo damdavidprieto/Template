@@ -13,6 +13,7 @@ export class Title extends LitElement {
             }
             h1, h2, h3, h4, h5 {
                 white-space: nowrap;
+                margin: 0;
             }
         `
     ];
