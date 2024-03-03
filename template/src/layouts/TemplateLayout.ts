@@ -5,6 +5,7 @@ import '../components/commons/structures/Footer';
 import '../components/commons/title/Title';
 import '../components/commons/navigationBar/NavigationBar';
 import '../components/commons/buttons/Button';
+import '../my-element';
 
 @customElement('app-template-layout')
 export class TemplateLayout extends LitElement {
@@ -14,8 +15,7 @@ export class TemplateLayout extends LitElement {
                 
             }
             main {
-                overflow: auto;
-                min-height: 80vh;
+                
             }
             main::-webkit-scrollbar-thumb {
                 margin-top: 10px;
