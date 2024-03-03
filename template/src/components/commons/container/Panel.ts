@@ -8,8 +8,6 @@ export class Panel extends LitElement {
             :host {
                 display: flex;
                 flex-direction: column;
-                padding: 0px 0px 5px 0px;
-                gap: 5px;
                 border: 2px solid #d20101;
                 border-radius: 5px;
             }
@@ -18,7 +16,9 @@ export class Panel extends LitElement {
                 border: 2px solid #d20101;
                 padding: 5px;
             }
-
+            :host(.row) app-container {
+                flex-direction: row;
+            }
         `
     ];
 

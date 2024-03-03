@@ -19,6 +19,7 @@ export class Button extends LitElement {
                 border:0px;
                 cursor: pointer;
                 box-shadow: 0px 0px 5px 0px #0000003c;
+                border:1px solid transparent;
             }
             button:hover {
                 background-color:#6b6b6b;
