@@ -7,10 +7,11 @@ export class Main extends LitElement {
         css`
             :host {
                 display: block;               
-                max-height: 75vh;
             }
             main{
                 overflow: auto;
+                padding-inline: 5px;
+                max-height: 80vh;
             }
         `
     ];
