@@ -16,13 +16,13 @@ export class TemplateLayout extends LitElement {
     render() {
         return html`
             <app-header>
-                <app-title>Header</app-title>
+                <app-title level=2>Header</app-title>
             </app-header>
             <main>
                 <slot></slot>
             </main>
             <app-footer>
-                <app-title>Footer</app-title>
+                <app-title level=2>Footer</app-title>
             </app-footer>`
             ;
     }
