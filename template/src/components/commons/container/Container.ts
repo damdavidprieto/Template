@@ -6,9 +6,10 @@ export class Container extends LitElement {
     static styles = [
         css`
             :host {
-                display: block;
-                overflow: auto;
-                max-height: 75vh;
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                gap: 5px;
             }
         `
     ];
