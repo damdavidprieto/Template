@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit';
-import { customElement, property } from 'lit/decorators.js'
+import { customElement } from 'lit/decorators.js'
 
 @customElement('app-container')
 export class Container extends LitElement {
@@ -12,7 +12,7 @@ export class Container extends LitElement {
             }
         `
     ];
-    //Ajustar el max-height en el update para tener en cuenta el tamaño del footer
+    //TODO: Ajustar el max-height en el update para tener en cuenta el tamaño del footer
     render() {
         return html`
             <slot></slot>
