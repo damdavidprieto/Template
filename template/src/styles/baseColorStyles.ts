@@ -7,7 +7,7 @@ export const baseColor = css`
         --color-tertiary: #ff5f5f;
         --color-quaternary: #ff9f9f;
         --color-quinary: #ffdfdf;
-        --color-background: #ffffff;
+        --color-background: #242424;
         //TEXTOS
         --color-text: #000000;
         --color-text-white: #ffffff;

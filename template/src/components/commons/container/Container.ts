@@ -7,10 +7,12 @@ export class Container extends LitElement {
         css`
             :host {
                 display: block;
+                overflow: auto;
+                max-height: 75vh;
             }
         `
     ];
-
+    //Ajustar el max-height en el update para tener en cuenta el tamaño del footer
     render() {
         return html`
             <slot></slot>
