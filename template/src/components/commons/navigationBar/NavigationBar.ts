@@ -6,7 +6,14 @@ export class NavigationBar extends LitElement {
     static styles = [
         css`
             :host {
-                display: block;
+                display: flex;
+                background-color: #920000bf;
+                padding: 0.5rem 1rem;
+            }
+            nav {
+                display:inline-flex;
+                width: 100%;
+                gap: 1rem;
             }
         `
     ];
