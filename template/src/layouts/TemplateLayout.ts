@@ -4,6 +4,7 @@ import '../components/commons/structures/Header';
 import '../components/commons/structures/Footer';
 import '../components/commons/title/Title';
 import '../components/commons/navigationBar/NavigationBar';
+import '../components/commons/buttons/Button';
 
 @customElement('app-template-layout')
 export class TemplateLayout extends LitElement {
@@ -11,6 +12,14 @@ export class TemplateLayout extends LitElement {
         css`
             :host {
                 
+            }
+            main {
+                overflow: auto;
+                min-height: 80vh;
+            }
+            main::-webkit-scrollbar-thumb {
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
         `
     ];
@@ -43,6 +52,7 @@ export class TemplateLayout extends LitElement {
                     <app-title level=1>Header</app-title>
                     <app-title level=1>Header</app-title>
                     <app-title level=1>Header</app-title>
+                    <app-button>Button</app-button>
                 </app-navigation-bar>
             </app-header>
             <main>
