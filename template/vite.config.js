@@ -23,7 +23,7 @@ export default () => {
         build:{
             outDir: resolve(__dirname,'dist'),
             rollupOptions:{
-                input:resolve(__dirname,'index.html')
+                input:resolve(__dirname,'src/index.html')
             }
         }
     })
