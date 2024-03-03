@@ -29,8 +29,8 @@ export class TemplateLayout extends LitElement {
         //Aplicar cambios despues de que se renderiza el componente
         this.updateComplete.then(() => {
             //Ajustar el main a la altura del header
-            const header = this.shadowRoot?.querySelector('app-header');
-            const main = this.shadowRoot?.querySelector('app-main');
+            const header = this.shadowRoot?.querySelector('app-header') as HTMLElement;
+            const main = this.shadowRoot?.querySelector('app-main') as HTMLElement;
             if (header && main) {
                 const headerHeight = header.getBoundingClientRect().height;
                 main.style.paddingTop = `${headerHeight}px`;
