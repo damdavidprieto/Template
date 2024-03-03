@@ -16,13 +16,6 @@ export class TemplateLayout extends LitElement {
             :host {
                 
             }
-            main {
-                
-            }
-            main::-webkit-scrollbar-thumb {
-                margin-top: 10px;
-                margin-bottom: 10px;
-            }
         `
     ];
 

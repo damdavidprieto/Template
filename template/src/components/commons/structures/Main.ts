@@ -6,10 +6,11 @@ export class Main extends LitElement {
     static styles = [
         css`
             :host {
-                display: block;
-                overflow: auto;
+                display: block;               
                 max-height: 75vh;
-                padding-inline: 5px;
+            }
+            main{
+                overflow: auto;
             }
         `
     ];
