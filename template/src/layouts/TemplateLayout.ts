@@ -1,5 +1,6 @@
 import { LitElement, html, css, PropertyValueMap } from 'lit';
 import { customElement } from 'lit/decorators.js'
+import { Main } from '../components/commons/structures/Main';
 import '../components/commons/structures/Header';
 import '../components/commons/structures/Footer';
 import '../components/commons/title/Title';
@@ -7,6 +8,7 @@ import '../components/commons/navigationBar/NavigationBar';
 import '../components/commons/buttons/Button';
 import '../my-element';
 import '../components/commons/structures/Main';
+
 
 @customElement('app-template-layout')
 export class TemplateLayout extends LitElement {
@@ -30,10 +32,17 @@ export class TemplateLayout extends LitElement {
         this.updateComplete.then(() => {
             //Ajustar el main a la altura del header
             const header = this.shadowRoot?.querySelector('app-header') as HTMLElement;
-            const main = this.shadowRoot?.querySelector('app-main') as HTMLElement;
-            if (header && main) {
+            const main = this.shadowRoot?.querySelector('app-main') as Main;
+            const footer = this.shadowRoot?.querySelector('app-footer') as HTMLElement;
+            if (header && main && footer) {
                 const headerHeight = header.getBoundingClientRect().height + 10;
+                const footerHeight = footer.getBoundingClientRect().height + 10;
                 main.style.paddingTop = `${headerHeight}px`;
+                // Traducir el valor de píxeles del footer a vh
+                const footerHeightInVh = (footerHeight / window.innerHeight) * 100;
+                // Establecer 'maxHeight' en 'vh'
+                main.maxHeight = `${100 - footerHeightInVh}vh`;
+                console.log('main', main.maxHeight);
             }
         });
     }
@@ -43,11 +52,13 @@ export class TemplateLayout extends LitElement {
             <app-header>
                 <app-navigation-bar>
                     <app-title level=1>Header templates</app-title>
-                    <app-button>Button</app-button>
-                    <app-button class="success">Button</app-button>
-                    <app-button class="info">Button</app-button>
-                    <app-button class="warning">Button</app-button>
-                    <app-button class="error">Button</app-button>
+                    <app-container class="row ml-auto">
+                        <app-button>Button</app-button>
+                        <app-button class="success">Button</app-button>
+                        <app-button class="info">Button</app-button>
+                        <app-button class="warning">Button</app-button>
+                        <app-button class="error">Button</app-button>
+                    </app-container>
                 </app-navigation-bar>
             </app-header>
             <app-main>

@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { customElement } from 'lit/decorators.js'
+import { classStyles } from '../../../styles/ClassStyles';
 
 @customElement('app-container')
 export class Container extends LitElement {
@@ -11,7 +12,8 @@ export class Container extends LitElement {
                 padding: 5px;
                 gap: 5px;
             }
-        `
+        `,
+        classStyles
     ];
     render() {
         return html`

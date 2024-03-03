@@ -1,12 +1,15 @@
 import { LitElement, html, css } from 'lit';
-import { customElement } from 'lit/decorators.js'
+import { customElement,property } from 'lit/decorators.js'
 
 @customElement('app-main')
 export class Main extends LitElement {
+    @property()
+    maxHeight : string = '';
+
     static styles = [
         css`
             :host {
-                display: block;               
+                display: block;              
             }
             main{
                 overflow: auto;
@@ -15,7 +18,17 @@ export class Main extends LitElement {
             }
         `
     ];
-    //TODO: Ajustar el max-height en el update para tener en cuenta el tamaño del footer
+
+    updated(changedProperties: Map<PropertyKey | string | number, unknown>): void {
+        super.updated(changedProperties);
+        const main = this.shadowRoot?.querySelector('main') as HTMLElement;
+        if (changedProperties.has('maxheight') && main) {
+            console.log('maxheight', this.maxHeight);
+            console.log('main', main.style);
+            main.style.maxHeight = this.maxHeight;
+        }
+    }
+
     render() {
         return html`
             <main>
