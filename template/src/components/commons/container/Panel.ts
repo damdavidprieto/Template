@@ -8,10 +8,14 @@ export class Panel extends LitElement {
             :host {
                 display: flex;
                 flex-direction: column;
-                padding: 5px;
+                padding: 0px 0px 5px 0px;
                 gap: 5px;
                 border: 1px solid #000;
                 border-radius: 5px;
+            }
+            app-title {
+                border: 1px solid #000;
+                padding: 5px;
             }
         `
     ];
@@ -23,10 +27,10 @@ export class Panel extends LitElement {
 
     render() {
         return html`
-            ${this.title ? 
-                html`<app-title level="${this.level}">${this.title}</app-title>` 
-                : ''}
-            <slot></slot>
+            <app-title level="${this.level}">${this.title}</app-title>
+            <app-container>
+                <slot></slot>
+            </app-container>
         `;
     }
 }
