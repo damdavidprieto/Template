@@ -32,7 +32,7 @@ export class TemplateLayout extends LitElement {
             const header = this.shadowRoot?.querySelector('app-header') as HTMLElement;
             const main = this.shadowRoot?.querySelector('app-main') as HTMLElement;
             if (header && main) {
-                const headerHeight = header.getBoundingClientRect().height;
+                const headerHeight = header.getBoundingClientRect().height + 10;
                 main.style.paddingTop = `${headerHeight}px`;
             }
         });
