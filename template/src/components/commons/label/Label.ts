@@ -7,6 +7,7 @@ export class Label extends LitElement {
         css`
             :host {
                 display: block;
+                white-space: nowrap;
             }
         `
     ];
