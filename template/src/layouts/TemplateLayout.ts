@@ -8,11 +8,11 @@ import '../components/commons/navigationBar/NavigationBar';
 import '../components/commons/buttons/Button';
 import '../my-element';
 import '../components/commons/structures/Main';
+import '../components/commons/label/Label';
 
 
 @customElement('app-template-layout')
 export class TemplateLayout extends LitElement {
-    
     static styles = [
         css`
             :host {
@@ -39,7 +39,10 @@ export class TemplateLayout extends LitElement {
                 const footerHeight = footer.getBoundingClientRect().height + 10;
                 main.style.paddingTop = `${headerHeight}px`;
                 // Traducir el valor de píxeles del footer a vh
-                const footerHeightInVh = (footerHeight / window.innerHeight) * 100;
+                console.log('footerHeight', footerHeight);
+                console.log('window.innerHeight', window.innerHeight);
+                const footerHeightInVh = (footerHeight*2 / window.innerHeight) * 100;
+                console.log('footerHeightInVh', footerHeightInVh);
                 // Establecer 'maxHeight' en 'vh'
                 main.maxHeight = `${100 - footerHeightInVh}vh`;
                 console.log('main', main.maxHeight);
@@ -53,11 +56,12 @@ export class TemplateLayout extends LitElement {
                 <app-navigation-bar>
                     <app-title level=1>Header templates</app-title>
                     <app-container class="row ml-auto">
-                        <app-button>Button</app-button>
-                        <app-button class="success">Button</app-button>
-                        <app-button class="info">Button</app-button>
-                        <app-button class="warning">Button</app-button>
-                        <app-button class="error">Button</app-button>
+                        <app-label class="bold">Label:</app-label>
+                        <app-button class="bold">Button</app-button>
+                        <app-button class="success bold">Button</app-button>
+                        <app-button class="info bold">Button</app-button>
+                        <app-button class="warning bold">Button</app-button>
+                        <app-button class="error bold">Button</app-button>
                     </app-container>
                 </app-navigation-bar>
             </app-header>

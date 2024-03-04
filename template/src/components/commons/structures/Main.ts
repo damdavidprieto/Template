@@ -14,7 +14,7 @@ export class Main extends LitElement {
             main{
                 overflow: auto;
                 padding-inline: 5px;
-                max-height: 80vh;
+                max-height: 85vh;
             }
         `
     ];
@@ -22,9 +22,7 @@ export class Main extends LitElement {
     updated(changedProperties: Map<PropertyKey | string | number, unknown>): void {
         super.updated(changedProperties);
         const main = this.shadowRoot?.querySelector('main') as HTMLElement;
-        if (changedProperties.has('maxheight') && main) {
-            console.log('maxheight', this.maxHeight);
-            console.log('main', main.style);
+        if (changedProperties.has('maxHeight') && main) {
             main.style.maxHeight = this.maxHeight;
         }
     }
