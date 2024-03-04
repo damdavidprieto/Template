@@ -2,7 +2,7 @@ import { LitElement, html, css } from 'lit';
 import { customElement } from 'lit/decorators.js'
 import '../label/Label';
 import { classStyles } from '../../../styles/ClassStyles';
-import { bthClases } from '../../../styles/BtnClassStyles';
+import { btnClases } from '../../../styles/BtnClassStyles';
 import { colorStyles } from '../../../styles/ColorStyles';
 import { constantStyles } from '../../../styles/ConstantStyles';
 
@@ -46,7 +46,7 @@ export class Button extends LitElement {
             }
         `,
         classStyles,
-        bthClases
+        btnClases
     ];
 
     render() {

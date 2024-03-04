@@ -1,6 +1,6 @@
 import { css } from "lit";
 
-export const bthClases = css`
+export const btnClases = css`
     :host(.success) button {
         background-color:#2ebe02;
     }
