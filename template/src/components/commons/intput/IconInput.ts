@@ -1,6 +1,8 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js'
 import { classStyles } from '../../../styles/ClassStyles';
+import { colorStyles } from '../../../styles/ColorStyles';
+import { constantStyles } from '../../../styles/ConstantStyles';
 
 @customElement('app-icon-input')
 export class IconIntput extends LitElement {
@@ -11,6 +13,8 @@ export class IconIntput extends LitElement {
     placeholder = "" ;
 
     static styles = [
+        colorStyles,
+        constantStyles,
         css`
             :host {
                 display: flex;
@@ -36,10 +40,21 @@ export class IconIntput extends LitElement {
                 box-shadow: 0 0 10px #fa0000;
             }
             button{
-                border: 0px none;
-                background-color: #9b9b9b;
+                border: 1px solid transparent;
+                background-color: var(--button-default-color);
                 border-top-right-radius: 5px;
                 border-bottom-right-radius: 5px;
+            }
+            button:hover{
+                background-color:var(--button-default-hover-color);
+                box-shadow: 0 0 5px #fa0000;
+                border:var(--border-green);
+            }
+            button:active{
+                background-color:var(--button-default-active-color);
+                box-shadow: 0 0 20px #fa0000;
+                border:var(--border);
+                transform: scale(.98);
             }
         `,
         classStyles
