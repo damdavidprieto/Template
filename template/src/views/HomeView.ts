@@ -5,6 +5,7 @@ import '../components/commons/container/Container';
 import '../components/commons/container/Panel';
 import '../components/composes/Template/panels/PanelButtons';
 import '../components/composes/Template/panels/PanelInpunts';
+import '../components/commons/icons/Info';
 
 @customElement('app-home-view')
 export class HomeView extends LitElement {
