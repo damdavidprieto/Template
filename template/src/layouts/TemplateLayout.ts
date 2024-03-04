@@ -9,7 +9,7 @@ import '@commons/navigationBar/NavigationBar';
 import '@commons/buttons/Button';
 import '@commons/structures/Main';
 import '@commons/label/Label';
-import '../components/commons/intput/Intput';
+import '@commons/intput/Input';
 
 @customElement('app-template-layout')
 export class TemplateLayout extends LitElement {
@@ -39,13 +39,13 @@ export class TemplateLayout extends LitElement {
                 const footerHeight = footer.getBoundingClientRect().height + 10;
                 main.style.paddingTop = `${headerHeight}px`;
                 // Traducir el valor de píxeles del footer a vh
-                console.log('footerHeight', footerHeight);
-                console.log('window.innerHeight', window.innerHeight);
+                //console.log('footerHeight', footerHeight);
+                //console.log('window.innerHeight', window.innerHeight);
                 const footerHeightInVh = (footerHeight*2 / window.innerHeight) * 100;
-                console.log('footerHeightInVh', footerHeightInVh);
+                //console.log('footerHeightInVh', footerHeightInVh);
                 // Establecer 'maxHeight' en 'vh'
                 main.maxHeight = `${100 - footerHeightInVh}vh`;
-                console.log('main', main.maxHeight);
+                //console.log('main', main.maxHeight);
             }
         });
     }
@@ -57,7 +57,7 @@ export class TemplateLayout extends LitElement {
                     <app-title level=1>Header templates</app-title>
                     <app-container class="row ml-auto">
                         <app-label class="bold">Label:</app-label>
-                        <app-intput placeholder="Input..."></app-intput>
+                        <app-input class="w-auto" placeholder="Input..."></app-input>
                         <app-button class="bold">Button</app-button>
                         <app-button class="success bold">Button</app-button>
                         <app-button class="info bold">Button</app-button>

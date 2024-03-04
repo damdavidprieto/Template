@@ -10,4 +10,7 @@ export const classStyles = css`
     :host(.bold){
         font-weight: bold;  
     }
+    :host(.w-auto){
+        width: auto;  
+    }
 `;
