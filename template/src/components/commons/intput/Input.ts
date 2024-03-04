@@ -14,7 +14,8 @@ export class Intput extends LitElement {
         css`
             :host {
                 display: flex;
-                min-height: 30px;               
+                min-height: 30px; 
+                width: 100%;              
             }
             :host(.w-auto) input{
                 width: auto;              
