@@ -1,13 +1,13 @@
 import { css } from "lit";
 
-export const baseColor = css`
+export const colorStyles = css`
     :host{
-        --color-primary: #920000;
-        --color-secondary: #ff0000;
-        --color-tertiary: #ff5f5f;
-        --color-quaternary: #ff9f9f;
-        --color-quinary: #ffdfdf;
-        --color-background: #242424;
+        --primary-color: #920000bf;
+        --secondary-color: #ff0000;
+        --tertiary-color: #ff5f5f;
+        --quaternary-color: #ff9f9f;
+        --quinary-color: #ffdfdf;
+        --background-color: #242424;
         //TEXTOS
         --color-text: #000000;
         --color-text-white: #ffffff;

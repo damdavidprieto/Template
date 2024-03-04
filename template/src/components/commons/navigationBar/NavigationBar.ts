@@ -1,15 +1,19 @@
 import { LitElement, html, css } from 'lit';
 import { customElement } from 'lit/decorators.js'
+import { colorStyles } from '../../../styles/ColorStyles';
+import { constantStyles } from '../../../styles/ConstantStyles';
 
 @customElement('app-navigation-bar')
 export class NavigationBar extends LitElement {
     static styles = [
+        colorStyles,
+        constantStyles,
         css`
             :host {
                 display: flex;
-                background-color: #920000bf;
-                padding: 0.5rem 1rem;
-                box-shadow: 0px 0px 5px 0px #000000c5;
+                background-color: var(--primary-color);
+                padding:var(--padding);
+                box-shadow: var(--box-shadow);
             }
             nav {
                 display:inline-flex;
