@@ -7,6 +7,7 @@ import '../components/composes/Template/panels/ButtonsPanel';
 import '../components/composes/Template/panels/InpuntsPanel';
 import '../components/commons/icons/Info';
 import '../components/composes/Template/panels/IconsPanel';
+import '../components/composes/Template/panels/IconInputPanel';
 
 @customElement('app-home-view')
 export class HomeView extends LitElement {
@@ -16,6 +17,7 @@ export class HomeView extends LitElement {
                 <app-panel-buttons></app-panel-buttons>
                 <app-panel-inputs></app-panel-inputs>
                 <app-panel-icons></app-panel-icons>
+                <app-icon-input-panel></app-icon-input-panel>
                 <my-element>
                     <h1>Vite + Lit</h1>
                 </my-element>           
