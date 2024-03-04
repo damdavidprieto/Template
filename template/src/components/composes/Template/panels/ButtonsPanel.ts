@@ -2,7 +2,7 @@ import { LitElement, html } from 'lit';
 import { customElement } from 'lit/decorators.js'
 
 @customElement('app-panel-buttons')
-export class PanelButtons extends LitElement {
+export class ButtonsPanel extends LitElement {
     render() {
         return html`
             <app-container>
