@@ -1,9 +1,9 @@
 import { LitElement, html, css } from 'lit';
 import { customElement } from 'lit/decorators.js'
+import '../label/Label';
 
 @customElement('app-button')
 export class Button extends LitElement {
-
     static styles = [
         css`
             :host {
@@ -75,7 +75,9 @@ export class Button extends LitElement {
     render() {
         return html`
             <button>
-                <slot></slot>
+                <app-label>
+                    <slot></slot>
+                </app-label>
             </button>
         `;
     }
