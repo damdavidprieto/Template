@@ -1,6 +1,7 @@
 import { LitElement, html, css } from 'lit';
 import { customElement } from 'lit/decorators.js'
 import '../label/Label';
+import { classStyles } from '../../../styles/ClassStyles';
 
 @customElement('app-button')
 export class Button extends LitElement {
@@ -10,16 +11,21 @@ export class Button extends LitElement {
                 display: flex;
                 width: 100%;
             }
+            :host(.bold) app-label {
+                font-weight: bold;
+            }
             button {
                 background-color:#979797;
                 border-radius: 5px;
                 padding: 5px 10px;
                 //width: fit-content;
                 width: 100%;
-                border:0px;
                 cursor: pointer;
                 box-shadow: 0px 0px 5px 0px #0000003c;
                 border:1px solid transparent;
+                justify-content: center;
+                align-items: center;
+                display: flex;
             }
             button:hover {
                 background-color:#6b6b6b;
@@ -69,7 +75,8 @@ export class Button extends LitElement {
             :host(.error:active ) button {
                 background-color:#7b0202;
             }
-        `
+        `,
+        classStyles
     ];
 
     render() {

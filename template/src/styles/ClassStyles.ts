@@ -7,4 +7,7 @@ export const classStyles = css`
     :host(.ml-auto){
         margin-left: auto;
     }
+    :host(.bold){
+        font-weight: bold;  
+    }
 `;
