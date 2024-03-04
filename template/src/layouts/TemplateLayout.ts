@@ -56,6 +56,7 @@ export class TemplateLayout extends LitElement {
                 <app-navigation-bar>
                     <app-title level=1>Header templates</app-title>
                     <app-container class="row ml-auto">
+                        <app-icon-info></app-icon-info>
                         <app-label class="bold">Label:</app-label>
                         <app-input class="w-auto" placeholder="Input..."></app-input>
                         <app-button class="bold">Button</app-button>
