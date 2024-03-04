@@ -1,9 +1,9 @@
 import { LitElement, html } from 'lit';
 import { customElement } from 'lit/decorators.js'
-import '../../../../components/commons/intput/Input';
+import '../../../commons/intput/Input';
 
 @customElement('app-panel-inputs')
-export class PanelInputs extends LitElement {
+export class InputsPanel extends LitElement {
     render() {
         return html`
             <app-container>
