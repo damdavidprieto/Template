@@ -8,6 +8,7 @@ import '../../../commons/icons/OpenLock';
 import '../../../commons/icons/Pluss';
 import '../../../commons/icons/Synchroniz';
 import '../../../commons/icons/File';
+import '../../../commons/icons/Search';
 
 @customElement('app-panel-icons')
 export class IconsPanel extends LitElement {
@@ -22,6 +23,7 @@ export class IconsPanel extends LitElement {
                     <app-icon-pluss></app-icon-pluss>
                     <app-icon-synchroniz></app-icon-synchroniz>
                     <app-icon-file></app-icon-file>
+                    <app-icon-search></app-icon-search>
                 </app-panel>
             </app-container>
             <app-container class="row">
@@ -33,6 +35,7 @@ export class IconsPanel extends LitElement {
                     <app-icon-pluss></app-icon-pluss>
                     <app-icon-synchroniz></app-icon-synchroniz>
                     <app-icon-file></app-icon-file>
+                    <app-icon-search></app-icon-search>
                 </app-panel>
                 <app-panel title="Icon Panel column">
                     <app-icon-info></app-icon-info>
@@ -42,6 +45,7 @@ export class IconsPanel extends LitElement {
                     <app-icon-pluss></app-icon-pluss>
                     <app-icon-synchroniz></app-icon-synchroniz>
                     <app-icon-file></app-icon-file>
+                    <app-icon-search></app-icon-search>
                 </app-panel>
                 <app-panel title="Icon Panel column">
                     <app-icon-info></app-icon-info>
@@ -51,6 +55,7 @@ export class IconsPanel extends LitElement {
                     <app-icon-pluss></app-icon-pluss>
                     <app-icon-synchroniz></app-icon-synchroniz>
                     <app-icon-file></app-icon-file>
+                    <app-icon-search></app-icon-search>
                 </app-panel>
                 <app-panel title="Icon Panel column">
                     <app-icon-info></app-icon-info>
@@ -60,6 +65,7 @@ export class IconsPanel extends LitElement {
                     <app-icon-pluss></app-icon-pluss>
                     <app-icon-synchroniz></app-icon-synchroniz>
                     <app-icon-file></app-icon-file>
+                    <app-icon-search></app-icon-search>
                 </app-panel>
                 <app-panel title="Icon Panel column">
                     <app-icon-info></app-icon-info>
@@ -69,6 +75,7 @@ export class IconsPanel extends LitElement {
                     <app-icon-pluss></app-icon-pluss>
                     <app-icon-synchroniz></app-icon-synchroniz>
                     <app-icon-file></app-icon-file>
+                    <app-icon-search></app-icon-search>
                 </app-panel>
             </app-container>
             `;

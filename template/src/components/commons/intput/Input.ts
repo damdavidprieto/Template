@@ -5,7 +5,7 @@ import { classStyles } from '../../../styles/ClassStyles';
 @customElement('app-input')
 export class Intput extends LitElement {
     @property({type:String})
-    type!: "text";
+    type!: "text" | "password" | "email" | "number" | "date" | "time" | "datetime-local" | "month" | "week" | "url" | "tel" | "search" | "color";
 
     @property({type:String})
     placeholder = "" ;
