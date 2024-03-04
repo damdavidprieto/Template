@@ -9,10 +9,18 @@ export const colorStyles = css`
         --quinary-color: #ffdfdf;
         --background-color: #242424;
         //TEXTOS
-        --color-text: #000000;
-        --color-text-white: #ffffff;
+        --text-color: #000000;
+        --text-white-color: #ffffff;
         //BORDES
-        --color-border: #000000;
-        --color-border-white: #ffffff;
+        --border-color: #000000;
+        --border-white-color: #ffffff;
+
+        --button-default-color:#979797;
+        --button-default-hover-color:#6b6b6b;
+        --button-default-active-color:#414141;
+        --button-info-color:#979797;
+        --button-success-color:#979797;
+        --button-warning-color:#979797;
+        --button-error-color:#979797;
     }
 `;
