@@ -10,6 +10,8 @@ import '@commons/buttons/Button';
 import '@commons/structures/Main';
 import '@commons/label/Label';
 import '@commons/intput/Input';
+import '@commons/intput/IconInput';
+import '@commons/icons/Info';
 
 @customElement('app-template-layout')
 export class TemplateLayout extends LitElement {
@@ -58,6 +60,9 @@ export class TemplateLayout extends LitElement {
                     <app-container class="row ml-auto">
                         <app-label class="bold">Label:</app-label>
                         <app-input class="w-auto" placeholder="Input..."></app-input>
+                        <app-icon-input  class="w-auto" placeholder="IconInput...">
+                            <app-icon-info></app-icon-info>
+                        </app-icon-input>
                         <app-icon-info></app-icon-info>
                         <app-button class="bold">Button</app-button>
                         <app-button class="success bold">Button</app-button>
