@@ -58,10 +58,8 @@ export class TemplateLayout extends LitElement {
                 <app-navigation-bar>
                     <app-title level=1>Header templates</app-title>
                     <app-container class="row ml-auto">
-                        <app-label class="bold">Label:</app-label>
-                        <app-icon-input  class="w-auto" placeholder="IconInput...">
-                            <app-icon-info></app-icon-info>
-                        </app-icon-input>
+                        <app-label class="bold">Selecciona el color:</app-label>
+                        <app-input type="color"></app-input>
                         <app-icon-info></app-icon-info>
                         <app-button class="bold">Button</app-button>
                         <app-button class="success bold">Button</app-button>

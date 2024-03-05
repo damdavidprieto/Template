@@ -7,11 +7,14 @@ export const colorStyles = css`
         --tertiary-color: #ff5f5f;
         --quaternary-color: #ff9f9f;
         --quinary-color: #ffdfdf;
+
         --background-color: #242424;
-        //TEXTOS
+        --icon-color: #2ebe02;
+
+        
         --text-color: #000000;
         --text-white-color: #ffffff;
-        //BORDES
+        
         --border-color: #000000;
         --border-white-color: #ffffff;
 
