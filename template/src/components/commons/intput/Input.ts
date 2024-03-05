@@ -24,6 +24,8 @@ export class Intput extends LitElement {
                 border-radius: 5px;
                 border: 1px solid #d20101;
                 width: 100%;
+                min-width: 150px;
+                height: auto;
             }
             input:hover{
                 border: 1px solid #fa0000;
