@@ -1,8 +1,8 @@
 import { LitElement, html, css} from 'lit';
 import { customElement, property  } from 'lit/decorators.js'
 
-@customElement('app-panel')
-export class Panel extends LitElement {
+@customElement('app-panel-color')
+export class PanelColor extends LitElement {
     static styles = [
         css`
             :host {
@@ -11,13 +11,19 @@ export class Panel extends LitElement {
                 border: 2px solid #d20101;
                 border-radius: 5px;
             }
-            app-title {
+            div {
+                display: flex;
+                flex-direction: row;
                 background-color:#9200007a;
                 border: 2px solid #d20101;
                 padding: 5px;
+                gap: 1rem;
             }
             :host(.row) app-container {
                 flex-direction: row;
+            }
+            app-input{
+                margin-left:auto;
             }
         `
     ];
@@ -29,7 +35,10 @@ export class Panel extends LitElement {
 
     render() {
         return html`
-            <app-title level="${this.level}">${this.titlePanel}</app-title>
+            <div>
+                <app-title level="${this.level}">${this.titlePanel}</app-title>
+                <app-input class="w-auto" type="color"></app-input>
+            </div>
             <app-container>
                 <slot></slot>
             </app-container>
