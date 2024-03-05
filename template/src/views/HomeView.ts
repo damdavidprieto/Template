@@ -15,9 +15,9 @@ export class HomeView extends LitElement {
         return html`
             <app-template-layout>
                 <app-icon-input-panel></app-icon-input-panel>
+                <app-panel-icons></app-panel-icons>
                 <app-panel-buttons></app-panel-buttons>
                 <app-panel-inputs></app-panel-inputs>
-                <app-panel-icons></app-panel-icons>
                 <my-element>
                     <h1>Vite + Lit</h1>
                 </my-element>           

@@ -16,6 +16,7 @@ export class IconsPanel extends LitElement {
         return html`
             <app-container>
                 <app-panel class="row" title="Icon Panel row">
+                    <app-input class="w-auto" type="color"></app-input>
                     <app-icon-info></app-icon-info>
                     <app-icon-menu></app-icon-menu>
                     <app-icon-lock></app-icon-lock>
