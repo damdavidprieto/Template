@@ -23,13 +23,13 @@ export class Panel extends LitElement {
     ];
 
     @property()
-    title: string = '';
+    titlePanel: string = '';
     @property({ type: Number }) 
     level : 1|2|3|4|5 = 3;
 
     render() {
         return html`
-            <app-title level="${this.level}">${this.title}</app-title>
+            <app-title level="${this.level}">${this.titlePanel}</app-title>
             <app-container>
                 <slot></slot>
             </app-container>

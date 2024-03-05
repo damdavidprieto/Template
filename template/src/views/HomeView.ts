@@ -3,6 +3,7 @@ import { customElement } from 'lit/decorators.js'
 import '../layouts/TemplateLayout';
 import '../components/commons/container/Container';
 import '../components/commons/container/Panel';
+import '../components/commons/container/PanelColor';
 import '../components/composes/Template/panels/ButtonsPanel';
 import '../components/composes/Template/panels/InpuntsPanel';
 import '../components/commons/icons/Info';
