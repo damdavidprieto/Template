@@ -13,4 +13,7 @@ export const classStyles = css`
     :host(.w-auto){
         width: auto;  
     }
+    :host(.p-0){
+        padding: 0px;  
+    }
 `;

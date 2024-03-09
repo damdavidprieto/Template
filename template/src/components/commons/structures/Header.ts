@@ -6,11 +6,10 @@ export class Header extends LitElement {
     static styles = [
         css`
             :host {
-                position: fixed;
-                top: 0;
-                right: 0;
-                left: 0;
-                z-index: 1030;
+                display: flex;
+            }
+            header{
+                width: -webkit-fill-available;
             }
         `
     ];

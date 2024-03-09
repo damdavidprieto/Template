@@ -29,9 +29,7 @@ export class TemplateLayout extends LitElement {
             const main = this.shadowRoot?.querySelector('app-main') as Main;
             const footer = this.shadowRoot?.querySelector('app-footer') as HTMLElement;
             if (header && main && footer) {
-                const headerHeight = header.getBoundingClientRect().height + 10;
                 const footerHeight = footer.getBoundingClientRect().height + 10;
-                main.style.paddingTop = `${headerHeight}px`;
                 // Traducir el valor de píxeles del footer a vh
                 //console.log('footerHeight', footerHeight);
                 //console.log('window.innerHeight', window.innerHeight);
@@ -53,8 +51,11 @@ export class TemplateLayout extends LitElement {
             <app-header>
                 <app-navigation-bar>
                     <app-title level=1>Header templates</app-title>
-                    <app-container class="row ml-auto">
-                        <app-label class="bold">Selecciona el color:</app-label>
+                    <app-container class="ml-auto">
+                        <app-container class="row p-0">
+                            <app-icon-info></app-icon-info>
+                            <app-label class="bold">Selecciona el color:</app-label>
+                        </app-container> 
                         <app-input @color-changed="${this.setColor}" type="color"></app-input>
                         <app-icon-info></app-icon-info>
                         <app-button class="bold">Button</app-button>

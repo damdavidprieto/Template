@@ -10,11 +10,14 @@ export class NavigationBar extends LitElement {
                 background-color: var(--primary-color);
                 padding:var(--padding);
                 box-shadow: var(--box-shadow);
+                max-width: 100vw;
             }
             nav {
-                display:inline-flex;
+                //display:inline-flex;
                 width: 100%;
                 gap: 1rem;
+                display: flex;
+                flex-direction: column;
             }
         `
     ];
