@@ -14,7 +14,7 @@ import '../../../commons/icons/Search';
 export class IconsPanel extends LitElement {
     render() {
         return html`
-            <app-panel-color class="row" titlePanel="Icon Panel row">
+            <app-panel-color titlePanel="Icon Panel row">
                 <app-icon-info></app-icon-info>
                 <app-icon-menu></app-icon-menu>
                 <app-icon-lock></app-icon-lock>
