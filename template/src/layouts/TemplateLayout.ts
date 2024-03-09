@@ -1,4 +1,4 @@
-import { LitElement, html, css, PropertyValueMap } from 'lit';
+import { LitElement, html, PropertyValueMap } from 'lit';
 import { customElement } from 'lit/decorators.js'
 import { Main } from '../components/commons/structures/Main';
 import '../my-element';
@@ -15,14 +15,6 @@ import '@commons/icons/Info';
 
 @customElement('app-template-layout')
 export class TemplateLayout extends LitElement {
-    static styles = [
-        css`
-            :host {
-                
-            }
-        `
-    ];
-
     firstUpdated(changedProperties: PropertyValueMap<any> | Map<PropertyKey, unknown>): void {
         super.firstUpdated(changedProperties);
 
@@ -52,6 +44,10 @@ export class TemplateLayout extends LitElement {
         });
     }
 
+    setColor(e:CustomEvent){
+        console.log(e.detail);
+    }
+
     render() {
         return html`
             <app-header>
@@ -59,7 +55,7 @@ export class TemplateLayout extends LitElement {
                     <app-title level=1>Header templates</app-title>
                     <app-container class="row ml-auto">
                         <app-label class="bold">Selecciona el color:</app-label>
-                        <app-input type="color"></app-input>
+                        <app-input @color-changed="${this.setColor}" type="color"></app-input>
                         <app-icon-info></app-icon-info>
                         <app-button class="bold">Button</app-button>
                         <app-button class="success bold">Button</app-button>

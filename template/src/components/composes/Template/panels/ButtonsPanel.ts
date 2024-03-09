@@ -13,7 +13,7 @@ export class ButtonsPanel extends LitElement {
                     <app-button class="warning">Button</app-button>
                     <app-button class="error">Button</app-button>
                 </app-panel>
-                <app-panel class="row" title="Button Panel row">
+                <app-panel class="row" titlePanel="Button Panel row">
                     <app-button>Button</app-button>
                     <app-button class="info">Button</app-button>
                     <app-button class="success">Button</app-button>
