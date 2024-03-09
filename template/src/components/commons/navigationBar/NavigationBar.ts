@@ -1,13 +1,9 @@
 import { LitElement, html, css } from 'lit';
 import { customElement } from 'lit/decorators.js'
-import { colorStyles } from '../../../styles/ColorStyles';
-import { constantStyles } from '../../../styles/ConstantStyles';
 
 @customElement('app-navigation-bar')
 export class NavigationBar extends LitElement {
     static styles = [
-        colorStyles,
-        constantStyles,
         css`
             :host {
                 display: flex;

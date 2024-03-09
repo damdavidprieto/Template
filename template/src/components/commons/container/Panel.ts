@@ -10,6 +10,7 @@ export class Panel extends LitElement {
                 flex-direction: column;
                 border: 2px solid #d20101;
                 border-radius: 5px;
+                width:max-content;
             }
             app-title {
                 background-color:#9200007a;

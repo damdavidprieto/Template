@@ -15,6 +15,7 @@ export class Intput extends LitElement {
             :host {
                 display: flex;
                 min-height: 30px; 
+                min-width: 150px;
                 width: 100%;              
             }
             :host(.w-auto) input{
@@ -38,10 +39,16 @@ export class Intput extends LitElement {
         `,
         classStyles
     ];
-
+    handleInput(event: Event) {
+        const inputElement = event.target as HTMLInputElement;
+        if (this.type === 'color') {
+            // Emitir un evento personalizado con el valor actual
+            this.dispatchEvent(new CustomEvent('color-changed', { detail: inputElement.value }));
+        }
+    }
     render() {
         return html`
-            <input type="${this.type}" placeholder="${this.placeholder}">
+            <input type="${this.type}" placeholder="${this.placeholder}" @input="${this.handleInput}">
         `;
     }
 }
