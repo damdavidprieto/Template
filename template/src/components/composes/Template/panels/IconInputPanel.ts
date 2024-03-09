@@ -12,7 +12,7 @@ export class IconInputPanel extends LitElement {
                     <app-icon-input type="text" placeholder="Input..."><app-icon-menu></app-icon-menu></app-icon-input>
                     <app-icon-input type="text" placeholder="Input..."><app-icon-lock></app-icon-lock></app-icon-input>
                 </app-panel>
-                <app-panel class="row" titlePanel="Input Panel row">
+                <app-panel titlePanel="Input Panel">
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
@@ -20,7 +20,7 @@ export class IconInputPanel extends LitElement {
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                 </app-panel>
             </app-container>
-            <app-container class="row">
+            <app-container>
                 <app-panel titlePanel="Input Panel column">
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>

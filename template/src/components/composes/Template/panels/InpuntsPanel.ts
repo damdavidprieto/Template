@@ -14,7 +14,7 @@ export class InputsPanel extends LitElement {
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                 </app-panel>
-                <app-panel class="row" titlePanel="Input Panel row">
+                <app-panel titlePanel="Input Panel row">
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
@@ -22,7 +22,7 @@ export class InputsPanel extends LitElement {
                     <app-input type="text" placeholder="Input..."></app-input>
                 </app-panel>
             </app-container>
-            <app-container class="row">
+            <app-container>
                 <app-panel titlePanel="Input Panel column">
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
