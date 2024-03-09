@@ -9,8 +9,9 @@ export class Container extends LitElement {
             :host {
                 display: flex;
                 flex-direction: column;
-                padding: 5px;
+                padding: 10px;
                 gap: 5px;
+                width: -webkit-fill-available;
             }
         `,
         classStyles
