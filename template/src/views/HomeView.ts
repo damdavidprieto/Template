@@ -1,6 +1,5 @@
 import { LitElement, html } from 'lit';
-import { customElement } from 'lit/decorators.js'
-import { colorStyles } from '../styles/ColorStyles';
+import { customElement } from 'lit/decorators.js';
 import '../layouts/TemplateLayout';
 import '../components/commons/container/Container';
 import '../components/commons/container/Panel';

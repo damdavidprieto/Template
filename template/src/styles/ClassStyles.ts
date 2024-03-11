@@ -7,6 +7,9 @@ export const classStyles = css`
     :host(.ml-auto){
         margin-left: auto;
     }
+    :host(.m-auto){
+        margin: auto;
+    }
     :host(.bold){
         font-weight: bold;  
     }
@@ -15,5 +18,8 @@ export const classStyles = css`
     }
     :host(.p-0){
         padding: 0px;  
+    }
+    :host(.m-0){
+        margin: 0px;  
     }
 `;

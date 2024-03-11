@@ -11,6 +11,7 @@ export class Panel extends LitElement {
                 border: 2px solid #d20101;
                 border-radius: 5px;
                 width:max-content;
+                margin: auto;
             }
             app-title {
                 background-color:#9200007a;

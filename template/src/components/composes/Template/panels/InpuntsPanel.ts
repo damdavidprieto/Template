@@ -1,5 +1,5 @@
 import { LitElement, html } from 'lit';
-import { customElement } from 'lit/decorators.js'
+import { customElement } from 'lit/decorators.js';
 import '../../../commons/intput/Input';
 
 @customElement('app-panel-inputs')
