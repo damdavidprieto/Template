@@ -7,4 +7,8 @@ export const iconStyles = css`
         align-content: center;
         flex-wrap: wrap;
     }
+    svg{
+        width: 100%;
+        height: 100%;
+    }
 `;
