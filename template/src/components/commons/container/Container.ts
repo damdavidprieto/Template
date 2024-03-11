@@ -13,6 +13,11 @@ export class Container extends LitElement {
                 gap: 5px;
                 width: -webkit-fill-available;
             }
+            @media (min-width: 768px) {
+                :host {
+                    flex-direction: row;
+                }
+            }
         `,
         classStyles
     ];
