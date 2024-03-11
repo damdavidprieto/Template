@@ -1,5 +1,6 @@
 import { LitElement, html, css} from 'lit';
 import { customElement, property  } from 'lit/decorators.js'
+import { classStyles } from '../../../styles/ClassStyles';
 
 @customElement('app-panel-color')
 export class PanelColor extends LitElement {
@@ -14,7 +15,8 @@ export class PanelColor extends LitElement {
             }
             div {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
+                //flex-direction: row;
                 background-color:#9200007a;
                 border: 2px solid #d20101;
                 padding: 5px;
@@ -26,7 +28,8 @@ export class PanelColor extends LitElement {
             app-input{
                 margin-left:auto;
             }
-        `
+        `,
+        classStyles
     ];
 
     @property()
@@ -34,11 +37,16 @@ export class PanelColor extends LitElement {
     @property({ type: Number }) 
     level : 1|2|3|4|5 = 3;
 
+    handlerColorChange(e: CustomEvent){
+        console.log(e.detail);
+        this.dispatchEvent(new CustomEvent('panel-color-changed', { detail: e.detail }));
+    }
+
     render() {
         return html`
             <div>
                 <app-title level="${this.level}">${this.titlePanel}</app-title>
-                <app-input class="w-auto" type="color"></app-input>
+                <app-input @color-changed="${this.handlerColorChange}" type="color"></app-input>
             </div>
             <app-container>
                 <slot></slot>

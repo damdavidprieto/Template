@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit';
+import { LitElement, css, html } from 'lit';
 import { customElement } from 'lit/decorators.js'
 import '../../../commons/intput/Input';
 import '../../../commons/icons/Menu';
@@ -12,9 +12,30 @@ import '../../../commons/icons/Search';
 
 @customElement('app-panel-icons')
 export class IconsPanel extends LitElement {
+    static styles = [
+        css`
+            :host {
+                display: flex;
+                margin: auto;
+                width: max-content;
+            }
+        `
+    ];
+    handlerPanelColorChange(e: CustomEvent){
+        console.log(e.detail);
+        const fillColor = e.detail;
+        const iconPanel = this.shadowRoot?.querySelector("app-panel-color")?.childNodes;
+        if (iconPanel) {
+            iconPanel.forEach((icon) => {
+                if(icon.nodeName != "#text"){
+                    (icon as Element).setAttribute('fillColor', fillColor);
+                }
+            });
+        }
+    }
     render() {
         return html`
-            <app-panel-color titlePanel="Icon Panel row">
+            <app-panel-color @panel-color-changed="${this.handlerPanelColorChange}" titlePanel="Icon Panel row">
                 <app-icon-info></app-icon-info>
                 <app-icon-menu></app-icon-menu>
                 <app-icon-lock></app-icon-lock>

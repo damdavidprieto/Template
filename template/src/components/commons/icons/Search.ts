@@ -1,21 +1,25 @@
-import { LitElement, html, css } from 'lit';
-import { customElement } from 'lit/decorators.js'
+import { LitElement, html } from 'lit';
+import { customElement, property } from 'lit/decorators.js'
+import { iconStyles } from '../../../styles/IconStyles';
+import { classStyles } from '../../../styles/ClassStyles';
 
 @customElement('app-icon-search')
 export class Search extends LitElement {
+    @property({type:String})
+    title = "";
+    @property({type:String})
+    fillColor ="#2ebe02";
+    
     static styles = [
-        css`
-            :host {
-                display: block;
-            }
-        `
+        iconStyles,
+        classStyles
     ];
 
     render() {
         return html`
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256"
+            <svg  title="${this.title}" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0,0,256,256"
                 style="fill:#000000;">
-                <g fill="#2ebe02" fill-rule="nonzero" stroke="none" 
+                <g fill="${this.fillColor}" fill-rule="nonzero" stroke="none" 
                     stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" 
                     stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" 
                     font-family="none" font-weight="none" font-size="none" text-anchor="none" 

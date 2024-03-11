@@ -1,5 +1,5 @@
 import { LitElement, html, PropertyValueMap } from 'lit';
-import { customElement } from 'lit/decorators.js'
+import { customElement } from 'lit/decorators.js';
 import { Main } from '../components/commons/structures/Main';
 import '../my-element';
 import '@commons/structures/Header';
@@ -53,11 +53,11 @@ export class TemplateLayout extends LitElement {
                     <app-title level=1>Header templates</app-title>
                     <app-container class="ml-auto">
                         <app-container class="row p-0">
-                            <app-icon-info></app-icon-info>
+                            <app-icon-info class="m-0"></app-icon-info>
                             <app-label class="bold">Selecciona el color:</app-label>
                         </app-container> 
                         <app-input @color-changed="${this.setColor}" type="color"></app-input>
-                        <app-icon-info></app-icon-info>
+                        <app-icon-info class="m-0"></app-icon-info>
                         <app-button class="bold">Button</app-button>
                         <app-button class="success bold">Button</app-button>
                         <app-button class="info bold">Button</app-button>
@@ -72,7 +72,7 @@ export class TemplateLayout extends LitElement {
             <app-footer>
                 <app-navigation-bar>
                     <app-title level=1>Footer</app-title>
-                    <app-input class="w-auto" placeholder="Input..."></app-input>
+                    <app-input placeholder="Input..."></app-input>
                     <app-button class="error">Button Error</app-button>
                 </app-navigation-bar>
             </app-footer>`
