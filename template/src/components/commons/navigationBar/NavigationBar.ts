@@ -19,6 +19,11 @@ export class NavigationBar extends LitElement {
                 display: flex;
                 flex-direction: column;
             }
+            @media (min-width: 1280px) {
+                nav {
+                    flex-direction: row;
+                }
+            }
         `
     ];
 

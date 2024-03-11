@@ -44,6 +44,8 @@ export class TemplateLayout extends LitElement {
 
     setColor(e:CustomEvent){
         console.log(e.detail);
+        const iconInfo = this.shadowRoot?.querySelector("app-icon-info")as Element;
+        iconInfo.setAttribute('fillColor', e.detail);
     }
 
     render() {

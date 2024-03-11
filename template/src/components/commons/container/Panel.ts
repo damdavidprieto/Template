@@ -1,5 +1,6 @@
 import { LitElement, html, css} from 'lit';
 import { customElement, property  } from 'lit/decorators.js'
+import { classStyles } from '../../../styles/ClassStyles';
 
 @customElement('app-panel')
 export class Panel extends LitElement {
@@ -18,10 +19,23 @@ export class Panel extends LitElement {
                 border: 2px solid #d20101;
                 padding: 5px;
             }
-            :host(.row) app-container {
+            div {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                gap: 5px;
+                width: -webkit-fill-available;
+            }
+            :host(.row) div{
                 flex-direction: row;
             }
-        `
+            @media (min-width: 1280px) {
+                :host {
+                    margin:unset;
+                }
+            }
+        `,
+        classStyles
     ];
 
     @property()
@@ -32,9 +46,9 @@ export class Panel extends LitElement {
     render() {
         return html`
             <app-title level="${this.level}">${this.titlePanel}</app-title>
-            <app-container>
+            <div>
                 <slot></slot>
-            </app-container>
+            </div>
         `;
     }
 }
