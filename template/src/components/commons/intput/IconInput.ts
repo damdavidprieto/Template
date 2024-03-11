@@ -41,18 +41,21 @@ export class IconIntput extends LitElement {
             }
             button{
                 border: 1px solid transparent;
-                background-color: var(--button-default-color);
+                //background-color: var(--button-default-color);
                 border-top-right-radius: 5px;
                 border-bottom-right-radius: 5px;
+                background-color:#be0202bf;
             }
             button:hover{
-                background-color:var(--button-default-hover-color);
+                //background-color:var(--button-default-hover-color);
                 box-shadow: 0 0 5px #fa0000;
-                border:var(--border-green);
+                background-color:#9b0202be;
+                border:var(--border);
             }
             button:active{
-                background-color:var(--button-default-active-color);
-                box-shadow: 0 0 20px #fa0000;
+                //background-color:var(--button-default-active-color);
+                box-shadow: 0 0 10px #fa0000;
+                background-color:#7b0101be;
                 border:var(--border);
                 transform: scale(.98);
             }
