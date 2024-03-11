@@ -10,6 +10,12 @@ export class Label extends LitElement {
                 display: flex;
                 align-items: center;
                 white-space: nowrap;
+                font-size: unset;
+            }
+            @media (max-width: 366px) {
+                :host {
+                    font-size: small
+                }
             }
         `,
         classStyles

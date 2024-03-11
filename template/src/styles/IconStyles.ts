@@ -10,5 +10,7 @@ export const iconStyles = css`
     svg{
         width: 100%;
         height: 100%;
+        max-width: 30px;
+        max-height: 30px;
     }
 `;

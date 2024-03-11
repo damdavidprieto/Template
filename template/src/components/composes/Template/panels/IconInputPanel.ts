@@ -9,20 +9,6 @@ export class IconInputPanel extends LitElement {
             <app-container class="center">
                 <app-panel titlePanel="Input Panel">
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
-                    <app-icon-input type="text" placeholder="Input..."><app-icon-menu></app-icon-menu></app-icon-input>
-                    <app-icon-input type="text" placeholder="Input..."><app-icon-lock></app-icon-lock></app-icon-input>
-                </app-panel>
-                <app-panel titlePanel="Input Panel">
-                    <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
-                    <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
-                    <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
-                    <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
-                    <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
-                </app-panel>
-            </app-container>
-            <app-container class="center">
-                <app-panel titlePanel="Input Panel">
-                    <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                 </app-panel>
