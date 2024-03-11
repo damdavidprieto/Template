@@ -10,8 +10,13 @@ export class Container extends LitElement {
                 display: flex;
                 flex-direction: column;
                 padding: 10px;
-                gap: 5px;
+                gap: 10px;
                 width: -webkit-fill-available;
+            }
+            @media (max-width: 366px) {
+                :host {
+                    flex-direction: column!important;
+                }
             }
             @media (min-width: 768px) {
                 :host {

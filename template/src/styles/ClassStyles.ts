@@ -1,6 +1,9 @@
 import { css } from "lit";
 
 export const classStyles = css`
+    :host(.center){
+        justify-content: center;
+    }
     :host(.row){
         flex-direction: row;
     }

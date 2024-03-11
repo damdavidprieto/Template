@@ -6,8 +6,8 @@ import '../../../commons/intput/IconInput';
 export class IconInputPanel extends LitElement {
     render() {
         return html`
-            <app-container>
-                <app-panel titlePanel="Input Panel column">
+            <app-container class="center">
+                <app-panel titlePanel="Input Panel">
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                     <app-icon-input type="text" placeholder="Input..."><app-icon-menu></app-icon-menu></app-icon-input>
                     <app-icon-input type="text" placeholder="Input..."><app-icon-lock></app-icon-lock></app-icon-input>
@@ -20,28 +20,28 @@ export class IconInputPanel extends LitElement {
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                 </app-panel>
             </app-container>
-            <app-container>
-                <app-panel titlePanel="Input Panel column">
+            <app-container class="center">
+                <app-panel titlePanel="Input Panel">
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                 </app-panel>
-                <app-panel titlePanel="Input Panel column">
+                <app-panel titlePanel="Input Panel">
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                 </app-panel>
-                <app-panel titlePanel="Button Panel column">
+                <app-panel titlePanel="Button Panel">
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                 </app-panel>
-                <app-panel titlePanel="Button Panel column">
+                <app-panel titlePanel="Button Panel">
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                 </app-panel>
-                <app-panel titlePanel="Button Panel column">
+                <app-panel titlePanel="Button Panel">
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>
                     <app-icon-input type="text" placeholder="Input..."><app-icon-info></app-icon-info></app-icon-input>

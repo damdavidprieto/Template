@@ -6,15 +6,15 @@ import '../../../commons/intput/Input';
 export class InputsPanel extends LitElement {
     render() {
         return html`
-            <app-container>
-                <app-panel titlePanel="Input Panel column">
+            <app-container class="center">
+                <app-panel titlePanel="Input Panel">
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                 </app-panel>
-                <app-panel titlePanel="Input Panel row">
+                <app-panel titlePanel="Input Panel">
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
@@ -22,36 +22,36 @@ export class InputsPanel extends LitElement {
                     <app-input type="text" placeholder="Input..."></app-input>
                 </app-panel>
             </app-container>
-            <app-container>
-                <app-panel titlePanel="Input Panel column">
+            <app-container class="center">
+                <app-panel titlePanel="Input Panel">
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                 </app-panel>
-                <app-panel titlePanel="Input Panel column">
+                <app-panel titlePanel="Input Panel">
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                 </app-panel>
-                <app-panel titlePanel="Button Panel column">
+                <app-panel titlePanel="Button Panel">
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                 </app-panel>
-                <app-panel titlePanel="Button Panel column">
+                <app-panel titlePanel="Button Panel">
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                 </app-panel>
-                <app-panel titlePanel="Button Panel column">
+                <app-panel titlePanel="Button Panel">
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
                     <app-input type="text" placeholder="Input..."></app-input>
