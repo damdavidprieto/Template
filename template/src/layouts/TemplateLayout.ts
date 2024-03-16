@@ -1,7 +1,6 @@
 import { LitElement, html, PropertyValueMap } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { Main } from '../components/commons/structures/Main';
-import '../my-element';
 import '@commons/structures/Header';
 import '@commons/structures/Footer';
 import '@commons/title/Title';
