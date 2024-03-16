@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js'
+import { classStyles } from '../../../styles/ClassStyles';
 
 @customElement('app-legend')
 export class Legend extends LitElement {
@@ -11,7 +12,8 @@ export class Legend extends LitElement {
             :host {
                 display: block;
             }
-        `
+        `,
+        classStyles
     ];
 
     render() {
