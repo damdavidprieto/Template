@@ -7,10 +7,9 @@ export class NavigationBar extends LitElement {
         css`
             :host {
                 display: flex;
-                background-color: var(--primary-color);
                 padding:var(--padding);
-                box-shadow: var(--box-shadow);
                 max-width: 100vw;
+                width: -webkit-fill-available;
             }
             nav {
                 //display:inline-flex;

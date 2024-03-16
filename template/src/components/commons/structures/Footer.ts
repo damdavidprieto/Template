@@ -9,6 +9,8 @@ export class Footer extends LitElement {
                 position: fixed;
                 bottom: 0;
                 width: 100%;
+                background-color: var(--primary-color);
+                box-shadow: var(--box-shadow);
             }
         `
     ];

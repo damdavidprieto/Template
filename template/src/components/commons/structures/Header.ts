@@ -7,8 +7,11 @@ export class Header extends LitElement {
         css`
             :host {
                 display: flex;
+                background-color: var(--primary-color);
+                box-shadow: var(--box-shadow);
             }
             header{
+                display:flex;
                 width: -webkit-fill-available;
             }
         `

@@ -5,6 +5,7 @@ import '@commons/structures/Header';
 import '@commons/structures/Footer';
 import '@commons/title/Title';
 import '@commons/navigationBar/NavigationBar';
+import '@commons/navigationBar/NavigationBarMenu';
 import '@commons/buttons/Button';
 import '@commons/structures/Main';
 import '@commons/label/Label';
@@ -50,6 +51,9 @@ export class TemplateLayout extends LitElement {
     render() {
         return html`
             <app-header>
+                <app-navigation-bar-menu>
+                    <app-icon-menu></app-icon-menu>
+                </app-navigation-bar-menu>
                 <app-navigation-bar>
                     <app-title level=1>Header templates</app-title>
                     <app-container class="row p-0">
