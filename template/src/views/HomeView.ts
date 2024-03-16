@@ -8,22 +8,17 @@ import '../components/composes/Template/panels/ButtonsPanel';
 import '../components/composes/Template/panels/InputsPanel';
 import '../components/commons/icons/Info';
 import '../components/composes/Template/panels/IconsPanel';
-import '../components/composes/Template/panels/IconInputPanel';
-import '../components/composes/Template/panels/SliderPanel';
 
 @customElement('app-home-view')
 export class HomeView extends LitElement {
     render() {
         return html`
             <app-template-layout>
+                <app-panel-inputs></app-panel-inputs>
                 <app-slider-panel></app-slider-panel>
                 <app-icon-input-panel></app-icon-input-panel>
                 <app-panel-icons></app-panel-icons>
-                <app-panel-buttons></app-panel-buttons>
-                <app-panel-inputs></app-panel-inputs>
-                <my-element>
-                    <h1>Vite + Lit</h1>
-                </my-element>           
+                <app-panel-buttons></app-panel-buttons>           
             </app-template-layout>
         `;
     }
