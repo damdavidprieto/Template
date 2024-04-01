@@ -13,7 +13,7 @@ export class Main extends LitElement {
             }
             main{
                 overflow: auto;
-                padding-inline: 5px;
+                padding: 10px;
             }
         `
     ];

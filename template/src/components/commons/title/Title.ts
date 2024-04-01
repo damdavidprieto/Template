@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js'
+import { classStyles } from '../../../styles/ClassStyles';
 
 @customElement('app-title')
 export class Title extends LitElement {
@@ -47,7 +48,8 @@ export class Title extends LitElement {
                     font-size: 0.35em;
                 }
             }
-        `
+        `,
+        classStyles
     ];
 
     private getHeaderElement() {

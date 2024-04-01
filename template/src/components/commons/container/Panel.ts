@@ -9,14 +9,14 @@ export class Panel extends LitElement {
             :host {
                 display: flex;
                 flex-direction: column;
-                border: 2px solid #d20101;
-                border-radius: 5px;
+                border: 2px solid #006907;
+                border-radius: 0px;
                 width:max-content;
                 margin: auto;
             }
             app-title {
-                background-color:#9200007a;
-                border: 2px solid #d20101;
+                background-color:#006907b6;
+                border: 2px solid #006907;
                 padding: 5px;
             }
             div {
