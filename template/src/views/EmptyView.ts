@@ -9,8 +9,8 @@ import '../components/composes/Template/panels/InputsPanel';
 import '../components/commons/icons/Info';
 import '../components/composes/Template/panels/IconsPanel';
 
-@customElement('app-home-view')
-export class HomeView extends LitElement {
+@customElement('app-empty-view')
+export class EmptyView extends LitElement {
     render() {
         return html`
             <app-template-layout>
