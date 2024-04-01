@@ -35,6 +35,7 @@ export class IconsPanel extends LitElement {
     }
     render() {
         return html`
+        <app-container class="column">
             <app-panel-color @panel-color-changed="${this.handlerPanelColorChange}" titlePanel="Icon Panel">
                 <app-icon-info></app-icon-info>
                 <app-icon-menu></app-icon-menu>
@@ -45,6 +46,7 @@ export class IconsPanel extends LitElement {
                 <app-icon-file></app-icon-file>
                 <app-icon-search></app-icon-search>
             </app-panel-color>
+        </app-container>
         `;
     }
 }
