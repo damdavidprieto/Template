@@ -25,19 +25,18 @@ export class TemplateLayout extends LitElement {
         //Aplicar cambios despues de que se renderiza el componente
         this.updateComplete.then(() => {
             //Ajustar el main a la altura del header
-            const header = this.shadowRoot?.querySelector('app-header') as HTMLElement;
             const main = this.shadowRoot?.querySelector('app-main') as Main;
             const footer = this.shadowRoot?.querySelector('app-footer') as HTMLElement;
-            if (header && main && footer) {
+            if (main && footer) {
                 const footerHeight = footer.getBoundingClientRect().height + 10;
                 // Traducir el valor de píxeles del footer a vh
-                //console.log('footerHeight', footerHeight);
-                //console.log('window.innerHeight', window.innerHeight);
+                console.log('footerHeight', footerHeight);
+                console.log('window.innerHeight', window.innerHeight);
                 const footerHeightInVh = (footerHeight*2 / window.innerHeight) * 100;
-                //console.log('footerHeightInVh', footerHeightInVh);
+                console.log('footerHeightInVh', footerHeightInVh);
                 // Establecer 'maxHeight' en 'vh'
                 main.maxHeight = `${100 - footerHeightInVh}vh`;
-                //console.log('main', main.maxHeight);
+                console.log('main', main.maxHeight);
             }
         });
     }
@@ -52,7 +51,7 @@ export class TemplateLayout extends LitElement {
         return html`
             <app-header>
                 <app-navigation-bar-menu>
-                    <app-icon-menu></app-icon-menu>
+                    
                 </app-navigation-bar-menu>
                 <app-navigation-bar>
                     <app-title level=1>Header templates</app-title>
