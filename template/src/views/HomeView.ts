@@ -14,11 +14,13 @@ export class HomeView extends LitElement {
     render() {
         return html`
             <app-template-layout>
-                <app-panel-inputs></app-panel-inputs>
-                <app-slider-panel></app-slider-panel>
-                <app-icon-input-panel></app-icon-input-panel>
-                <app-panel-icons></app-panel-icons>
-                <app-panel-buttons></app-panel-buttons>           
+                <app-container class="column">
+                    <app-panel-inputs></app-panel-inputs>
+                    <app-slider-panel></app-slider-panel>
+                    <app-icon-input-panel></app-icon-input-panel>
+                    <app-panel-icons></app-panel-icons>
+                    <app-panel-buttons></app-panel-buttons> 
+                </app-container>          
             </app-template-layout>
         `;
     }
