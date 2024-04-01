@@ -14,6 +14,7 @@ export class Main extends LitElement {
             main{
                 overflow: auto;
                 padding: 10px;
+                max-height: 80vh;
             }
         `
     ];

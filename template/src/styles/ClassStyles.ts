@@ -28,6 +28,9 @@ export const classStyles = css`
     :host(.w-auto){
         width: auto;  
     }
+    :host(.w-full){
+        width: -webkit-fill-available;  
+    }
     :host(.p-0){
         padding: 0px;  
     }
