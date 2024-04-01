@@ -17,11 +17,9 @@ export class EmptyView extends LitElement {
         return html`
             <app-login-layout>
                 <app-container class="column">
-                  <app-card titleCard="Login" class="m-auto">
+                  <app-card titleCard="Credenciales" class="m-auto">
                     <app-panel class="w-full" titlePanel="Usuario">
                         <app-input placeholder="Usuario" type="text"></app-input>
-                    </app-panel>
-                    <app-panel class="w-full" titlePanel="Contraseña">
                         <app-input placeholder="Contraseña" type="text"></app-input>
                     </app-panel>
                     <app-button class="success">Login</app-button>
@@ -34,7 +32,15 @@ export class EmptyView extends LitElement {
                   </app-card>    
                   <app-card titleCard="Actualizar contraseña" class="m-auto">
                     <app-panel class="w-full" titlePanel="Contraseña">
+                        <app-input placeholder="Nueva Contraseña" type="text"></app-input>
+                        <app-input placeholder="Repita Contraseña" type="text"></app-input>
+                    </app-panel>
+                    <app-button class="success">Actualizar</app-button>
+                  </app-card>  
+                  <app-card titleCard="Cambiar contraseña" class="m-auto">
+                    <app-panel class="w-full" titlePanel="Contraseña">
                         <app-input placeholder="Contraseña" type="text"></app-input>
+                        <app-input placeholder="Nueva Contraseña" type="text"></app-input>
                         <app-input placeholder="Repita Contraseña" type="text"></app-input>
                     </app-panel>
                     <app-button class="success">Actualizar</app-button>
