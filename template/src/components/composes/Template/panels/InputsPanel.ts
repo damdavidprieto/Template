@@ -6,8 +6,8 @@ import '../../../commons/intput/Input';
 export class InputsPanel extends LitElement {
     render() {
         return html`
-            <app-container class="center">
-            <app-panel titlePanel="Input radio Panel">
+            <app-container class="center wrap">
+                <app-panel titlePanel="Input radio Panel">
                     <app-input type="radio"></app-input>
                     <app-input type="radio"></app-input>
                     <app-input type="radio"></app-input>
@@ -38,7 +38,7 @@ export class InputsPanel extends LitElement {
                     <app-input type="number" placeholder="Introduce un número..."></app-input>
                 </app-panel>
             </app-container>
-            <app-container class="center">
+            <app-container class="center wrap">
                 <app-panel titlePanel="range Panel">
                     <app-input type="range"></app-input>
                     <app-input type="range"></app-input>

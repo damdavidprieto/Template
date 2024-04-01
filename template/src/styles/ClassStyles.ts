@@ -1,6 +1,9 @@
 import { css } from "lit";
 
 export const classStyles = css`
+    :host(.wrap){
+        flex-wrap: wrap;
+    }
     :host(.center){
         justify-content: center;
     }
