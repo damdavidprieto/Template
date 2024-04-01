@@ -1,6 +1,9 @@
 import { css } from "lit";
 
 export const classStyles = css`
+    :host(.f){
+        display: flex
+    }
     :host(.wrap){
         flex-wrap: wrap;
     }
@@ -9,6 +12,9 @@ export const classStyles = css`
     }
     :host(.row){
         flex-direction: row;
+    }
+    :host(.column){
+        flex-direction: column;
     }
     :host(.ml-auto){
         margin-left: auto;
