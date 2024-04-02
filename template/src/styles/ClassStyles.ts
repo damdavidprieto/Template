@@ -33,6 +33,12 @@ export const classStyles = css`
     }
     :host(.p-0){
         padding: 0px;  
+    }    
+    :host(.p-1){
+        padding: 5px;  
+    }
+    :host(.p-2){
+        padding: 10px;  
     }
     :host(.m-0){
         margin: 0px;  

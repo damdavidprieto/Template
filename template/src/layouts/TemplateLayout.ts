@@ -57,12 +57,12 @@ export class TemplateLayout extends LitElement {
             <app-header>
                 <app-navigation-bar>
                     <app-title level=1>Header templates</app-title>
-                    <app-container class="row p-0">
+                    <app-container class="row p-1">
                         <app-icon-info class="m-0"></app-icon-info>
                         <app-label class="bold">Selecciona el color:</app-label>
                         <app-input @color-changed="${this.setColor}" type="color"></app-input>
                     </app-container> 
-                    <app-container class="p-0">
+                    <app-container class="p-2">
                         <app-button class="bold">Button</app-button>
                         <app-button class="success bold">Button</app-button>
                         <app-button class="info bold">Button</app-button>

@@ -60,7 +60,7 @@ export class LoginLayout extends LitElement {
                 </app-drawer> -->
                 <app-navigation-bar>
                     <app-title level=1>Login template</app-title>
-                    <app-container class="row p-0">
+                    <app-container class="row p-1">
                         <app-icon-info class="m-0"></app-icon-info>
                         <app-label class="bold">Selecciona el color:</app-label>
                         <app-input @color-changed="${this.setColor}" type="color"></app-input>
