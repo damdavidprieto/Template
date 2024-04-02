@@ -16,12 +16,32 @@ export class TemplateLayout extends LitElement {
         css`
             :host {
                 display: grid;
-                grid-template-rows: 7% 1fr 7%;
+                grid-template-rows: fit-content(23%) 1fr fit-content(7%);
             }
             main{
                 overflow-y:scroll;
-                height: 84vh;
+                height: 60vh;
                 padding: 15px
+            }
+            @media (max-width: 768px) {
+                :host {
+                    grid-template-rows: fit-content(20%) 1fr fit-content(7%);
+                }
+                main{
+                    overflow-y:scroll;
+                    height: 60vh;
+                    padding: 15px
+                }
+            }
+            @media (min-width: 1280px) {
+                :host {
+                    grid-template-rows: fit-content(7%) 1fr fit-content(7%);
+                }
+                main{
+                    overflow-y:scroll;
+                    height: 84vh;
+                    padding: 15px
+                }
             }
         `
     ];
