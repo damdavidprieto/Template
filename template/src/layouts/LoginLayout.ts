@@ -17,12 +17,32 @@ export class LoginLayout extends LitElement {
         css`
             :host {
                 display: grid;
-                grid-template-rows: 7% 1fr;
+                grid-template-rows: 14% 1fr;
             }
             main{
                 overflow-y:scroll;
-                height: 90vh;
+                height: 83vh;
                 padding: 15px
+            }
+            @media (max-width: 366px) {
+                :host {
+                    grid-template-rows: fit-content(10%) 1fr;
+                }
+                main{
+                    overflow-y:scroll;
+                    height: 77vh;
+                    padding: 15px
+                }
+            }
+            @media (min-width: 1280px) {
+                :host {
+                    grid-template-rows: fit-content(5%) 1fr;
+                }
+                main{
+                    overflow-y:scroll;
+                    height: 90vh;
+                    padding: 15px
+                }
             }
         `
     ];
