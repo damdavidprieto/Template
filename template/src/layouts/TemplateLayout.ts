@@ -1,12 +1,10 @@
-import { LitElement, html, PropertyValueMap } from 'lit';
+import { LitElement, html, PropertyValueMap, css } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import { Main } from '../components/commons/structures/Main';
 import '@commons/structures/Header';
 import '@commons/structures/Footer';
 import '@commons/title/Title';
 import '@commons/navigationBar/NavigationBar';
 import '@commons/buttons/Button';
-import '@commons/structures/Main';
 import '@commons/label/Label';
 import '@commons/intput/Input';
 import '@commons/intput/IconInput';
@@ -14,31 +12,19 @@ import '@commons/icons/Info';
 
 @customElement('app-template-layout')
 export class TemplateLayout extends LitElement {
-    firstUpdated(changedProperties: PropertyValueMap<any> | Map<PropertyKey, unknown>): void {
-        super.firstUpdated(changedProperties);
-
-    }
-
-    protected update(changedProperties: PropertyValueMap<any> | Map<PropertyKey, unknown>): void {
-        super.update(changedProperties);
-        //Aplicar cambios despues de que se renderiza el componente
-        this.updateComplete.then(() => {
-            //Ajustar el main a la altura del header
-            const main = this.shadowRoot?.querySelector('app-main') as Main;
-            const footer = this.shadowRoot?.querySelector('app-footer') as HTMLElement;
-            if (main && footer) {
-                const footerHeight = footer.getBoundingClientRect().height + 10;
-                // Traducir el valor de píxeles del footer a vh
-                console.log('footerHeight', footerHeight);
-                console.log('window.innerHeight', window.innerHeight);
-                const footerHeightInVh = (footerHeight*2 / window.innerHeight) * 100;
-                console.log('footerHeightInVh', footerHeightInVh);
-                // Establecer 'maxHeight' en 'vh'
-                main.maxHeight = `${100 - footerHeightInVh}vh`;
-                console.log('main', main.maxHeight);
+    static styles = [
+        css`
+            :host {
+                display: grid;
+                grid-template-rows: 7% 1fr 7%;
             }
-        });
-    }
+            main{
+                overflow-y:scroll;
+                height: 84vh;
+                padding: 15px
+            }
+        `
+    ];
 
     setColor(e:CustomEvent){
         console.log(e.detail);
@@ -65,9 +51,9 @@ export class TemplateLayout extends LitElement {
                     </app-container>
                 </app-navigation-bar>
             </app-header>
-            <app-main>
+            <main>
                 <slot></slot>
-            </app-main>
+            </main>
             <app-footer>
                 <app-navigation-bar>
                     <app-title level=1>Footer</app-title>
