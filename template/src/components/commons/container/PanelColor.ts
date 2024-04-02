@@ -15,7 +15,6 @@ export class PanelColor extends LitElement {
             }
             div {
                 display: flex;
-                flex-direction: column;
                 background-color:#006907b6;
                 border: 2px solid #006907;
                 padding: 5px;
@@ -47,7 +46,7 @@ export class PanelColor extends LitElement {
                 <app-title level="${this.level}">${this.titlePanel}</app-title>
                 <app-input @color-changed="${this.handlerColorChange}" type="color"></app-input>
             </div>
-            <app-container>
+            <app-container class="p-2">
                 <slot></slot>
             </app-container>
         `;
