@@ -9,6 +9,8 @@ export class OpenLock extends LitElement {
     title = "";
     @property({type:String})
     fillColor ="#2ebe02";
+    @property({type:Number})
+    size = 24;
 
     static styles = [
         iconStyles,

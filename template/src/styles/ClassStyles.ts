@@ -1,14 +1,20 @@
 import { css } from "lit";
 
 export const classStyles = css`
+    :host(.bold){
+        font-weight: bold;
+    }
     :host(.f){
-        display: flex
+        display: flex;
     }
     :host(.wrap){
         flex-wrap: wrap;
     }
     :host(.center){
         justify-content: center;
+    }
+    :host(.a-center){
+        align-items: center;
     }
     :host(.row){
         flex-direction: row;

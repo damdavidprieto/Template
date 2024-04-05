@@ -10,6 +10,7 @@ import '@commons/intput/Input';
 import '@commons/intput/IconInput';
 import '@commons/icons/Info';
 import '@commons/drawer/Drawer';
+import '../components/commons/label/CurrentDateTime';
 
 @customElement('app-login-layout')
 export class LoginLayout extends LitElement {
@@ -60,10 +61,11 @@ export class LoginLayout extends LitElement {
                 </app-drawer> -->
                 <app-navigation-bar>
                     <app-title level=1>Login template</app-title>
-                    <app-container class="row p-1">
+                    <app-container class="row p-1 a-center">
                         <app-icon-info class="m-0"></app-icon-info>
                         <app-label class="bold">Selecciona el color:</app-label>
                         <app-input @color-changed="${this.setColor}" type="color"></app-input>
+                        <current-date-time class="bold"></current-date-time>
                     </app-container>
                 </app-navigation-bar>
             </app-header>

@@ -8,6 +8,7 @@ import '../components/composes/Template/panels/ButtonsPanel';
 import '../components/composes/Template/panels/InputsPanel';
 import '../components/commons/icons/Info';
 import '../components/composes/Template/panels/IconsPanel';
+import '../components/commons/cards/Card';
 
 @customElement('app-home-view')
 export class HomeView extends LitElement {
@@ -15,10 +16,17 @@ export class HomeView extends LitElement {
         return html`
             <app-template-layout>
                 <app-container class="column">
+                    <app-card titleCard="Paneles de inputs" class="m-auto">
+                        <app-panel-inputs></app-panel-inputs>
+                    </app-card>   
                     <app-panel-inputs></app-panel-inputs>
-                    <app-slider-panel></app-slider-panel>
-                    <app-icon-input-panel></app-icon-input-panel>
+                    <app-card titleCard="Paneles de inputs" class="m-auto">
+                        <app-panel-icons></app-panel-icons>
+                    </app-card>   
                     <app-panel-icons></app-panel-icons>
+                    <app-card titleCard="Paneles de inputs" class="m-auto">
+                        <app-panel-buttons></app-panel-buttons>
+                    </app-card>   
                     <app-panel-buttons></app-panel-buttons> 
                 </app-container>          
             </app-template-layout>
