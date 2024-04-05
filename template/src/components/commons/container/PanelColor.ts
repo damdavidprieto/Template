@@ -35,6 +35,21 @@ export class PanelColor extends LitElement {
     @property({ type: Number }) 
     level : 1|2|3|4|5 = 3;
 
+    private containerElement!: HTMLElement;
+
+    firstUpdated() {
+        this.containerElement = this.shadowRoot!.querySelector('app-container') as HTMLElement;
+        console.log(this.containerElement);
+    }
+
+    updated(changedProperties: Map<string | number | symbol, unknown>) {
+        super.updated(changedProperties);
+        const appliedStyles = this.getAttribute('class');
+        if (appliedStyles && this.containerElement) {
+            this.containerElement.className = appliedStyles;
+        }
+    }
+
     handlerColorChange(e: CustomEvent){
         console.log(e.detail);
         this.dispatchEvent(new CustomEvent('panel-color-changed', { detail: e.detail }));
