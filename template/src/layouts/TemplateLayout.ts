@@ -1,4 +1,4 @@
-import { LitElement, html, PropertyValueMap, css } from 'lit';
+import { LitElement, html, css } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import '@commons/structures/Header';
 import '@commons/structures/Footer';
