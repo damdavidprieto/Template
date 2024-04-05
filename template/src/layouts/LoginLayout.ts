@@ -11,6 +11,7 @@ import '@commons/intput/IconInput';
 import '@commons/icons/Info';
 import '@commons/drawer/Drawer';
 import '../components/commons/label/CurrentDateTime';
+import '../components/commons/forms/FormInfo';
 
 @customElement('app-login-layout')
 export class LoginLayout extends LitElement {
@@ -66,6 +67,7 @@ export class LoginLayout extends LitElement {
                         <app-label class="bold">Selecciona el color:</app-label>
                         <app-input @color-changed="${this.setColor}" type="color"></app-input>
                         <current-date-time class="bold f row"></current-date-time>
+                        <app-form-info infoLabel="TEST" class="bold">FORM INFO</app-form-info>
                     </app-container>
                 </app-navigation-bar>
             </app-header>
