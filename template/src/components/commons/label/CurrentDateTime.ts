@@ -7,12 +7,17 @@ import { classStyles } from '../../../styles/ClassStyles';
 @customElement('current-date-time')
 export class CurrentDateTime extends LitElement {
   private timer: number = 0;
+  public dateLabel: string = '';
+  public timeLabel: string = '';
   public currentDate: string = '';
   public currentTime: string = '';
 
   static styles = [css`
     :host {
       display: block;
+    }
+    app-label{
+      padding: 0px 5px 0px 5px;
     }
     `,
         classStyles
@@ -44,10 +49,8 @@ export class CurrentDateTime extends LitElement {
 
   render() {
     return html`
-      <app-container>
-        <app-label>Fecha actual: ${this.currentDate}</app-label>
-        <app-label>Hora actual: ${this.currentTime}</app-label>
-      </app-container>
+        <app-label>${this.dateLabel} ${this.currentDate}</app-label>
+        <app-label>${this.timeLabel} ${this.currentTime}</app-label>
     `;
   }
 }

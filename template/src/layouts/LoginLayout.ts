@@ -65,7 +65,7 @@ export class LoginLayout extends LitElement {
                         <app-icon-info class="m-0"></app-icon-info>
                         <app-label class="bold">Selecciona el color:</app-label>
                         <app-input @color-changed="${this.setColor}" type="color"></app-input>
-                        <current-date-time class="bold"></current-date-time>
+                        <current-date-time class="bold f row"></current-date-time>
                     </app-container>
                 </app-navigation-bar>
             </app-header>
