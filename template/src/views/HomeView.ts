@@ -23,6 +23,11 @@ export class HomeView extends LitElement {
                         <app-panel-icons></app-panel-icons>
                         <app-panel-icons></app-panel-icons>
                     </app-card>
+                    <app-card titleCard="Paneles de inputs" class="m-auto">
+                        <app-info-panel></app-info-panel>
+                        <app-info-panel></app-info-panel>
+                        <app-info-panel></app-info-panel>
+                    </app-card>
 <!--                     <app-card titleCard="Paneles de inputs" class="m-auto">
                         <app-panel-inputs></app-panel-inputs>
                     </app-card>   

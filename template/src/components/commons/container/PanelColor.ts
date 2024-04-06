@@ -12,6 +12,7 @@ export class PanelColor extends LitElement {
                 border: 2px solid #006907;
                 border-radius: 5px;
                 width:max-content;
+                margin: 5px 5px 5px 5px;
             }
             div {
                 display: flex;

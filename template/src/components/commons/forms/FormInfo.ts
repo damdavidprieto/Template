@@ -14,7 +14,7 @@ export class FormInfo extends LitElement {
               flex-direction: row;
             }
             app-label{
-              padding: 0px 5px 0px 5px;
+              padding: 5px 5px 5px 5px;
             }
         `,
         classStyles
