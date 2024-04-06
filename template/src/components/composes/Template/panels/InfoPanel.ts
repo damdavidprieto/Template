@@ -8,9 +8,7 @@ export class InfoPanel extends LitElement {
     static styles = [
         css`
             :host {
-                display: flex;
                 margin: auto;
-                width: max-content;
             }
         `     ,
         classStyles
@@ -34,6 +32,17 @@ export class InfoPanel extends LitElement {
                 <app-form-info infoLabel="TEST" class="bold">FORM INFO</app-form-info>
                 <app-form-info infoLabel="TEST" class="bold">FORM INFO</app-form-info>
                 <app-form-info infoLabel="TEST" class="bold">FORM INFO</app-form-info>
-            </app-panel-color>`;
+            </app-panel-color>
+            <app-panel-color class="f row" @panel-color-changed="${this.handlerPanelColorChange}" titlePanel="Icon Panel">
+                <app-form-info infoLabel="" class="bold">FORM INFO</app-form-info>
+                <app-form-info infoLabel="TEST" class="bold">FORM INFO</app-form-info>
+                <app-form-info infoLabel="TEST" class="bold">FORM INFO</app-form-info>
+                <app-form-info infoLabel="TEST" class="bold">FORM INFO</app-form-info>
+                <app-form-info infoLabel="" class="bold">FORM INFO</app-form-info>
+                <app-form-info infoLabel="TEST" class="bold">FORM INFO</app-form-info>
+                <app-form-info infoLabel="TEST" class="bold">FORM INFO</app-form-info>
+                <app-form-info infoLabel="TEST" class="bold">FORM INFO</app-form-info>
+            </app-panel-color>
+            `;
     }
 }
