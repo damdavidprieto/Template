@@ -38,28 +38,43 @@ export class ContextualMenu extends LitElement {
     }
 
     handleContextMenu(event: MouseEvent) {
-        debugger;
-        const targetElement = this.shadowRoot?.getElementById(this.for);
+        const listElements = this.shadowRoot?.host?.parentElement?.children;
+        let targetElement: Element | undefined
+        if(listElements){
+            targetElement = Array.from(listElements).find(child => child.id === this.for);
+        }
         if (!targetElement) return;
         const menu = this.shadowRoot?.querySelector('.context-menu') as HTMLElement;
         if (!menu) return;
-        event.preventDefault();
-        if (event.target === targetElement) {
-            menu.style.display = 'block';
-            menu.style.top = `${event.clientY}px`;
-            menu.style.left = `${event.clientX}px`;
 
+        const point = { x: event.clientX, y: event.clientY }; // Coordenadas del punto a verificar
+        const containerRect = targetElement.getBoundingClientRect();
+        const isInside = point.x >= containerRect.left && point.x <= containerRect.right &&
+                         point.y >= containerRect.top && point.y <= containerRect.bottom;
+
+        if (isInside) {
+            event.preventDefault();
+            this.style.display = 'block';
+            menu.style.display = 'flex';
+            menu.style.flexDirection = 'column';
+            console.log(event.clientY + " - " + event.clientX);
             // Oculta el menú al hacer clic fuera de él
             const hideMenu = () => {
-                menu.style.display = 'none';
+                this.style.display = 'none';
                 document.removeEventListener('click', hideMenu);
             };
             document.addEventListener('click', hideMenu);
+            const hideMenuOnContextMenu = () => {
+                this.style.display = 'none';
+                document.removeEventListener('contextmenu', hideMenuOnContextMenu);
+            };
+            document.addEventListener('contextmenu', hideMenuOnContextMenu);
         }
         // Oculta el menú al hacer clic fuera de él
         document.addEventListener('click', () => {
-            menu.style.display = 'none';
+            this.style.display = 'none';
         }, { once: true });
+        this.requestUpdate();
     }
 
     render() {
