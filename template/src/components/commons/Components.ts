@@ -1,3 +1,4 @@
+export { ContextualMenu } from "./contextualMenu/ContextualMenu";
 export { Button } from "./buttons/Button";
 export { Card } from "./cards/Card";
 export { Container } from "./container/Container";
@@ -30,7 +31,6 @@ export { Title } from "./title/Title";
 export { Toast } from "./toast/Toast";
 export { Tooltip } from "./tooltip/tooltip";
 
-
 export * from "./buttons/Button";
 export * from "./cards/Card";
 export * from "./container/Container";
@@ -62,6 +62,7 @@ export * from "./structures/Header";
 export * from "./title/Title";
 export * from "./toast/Toast";
 export * from "./tooltip/tooltip";
+export * from "./contextualMenu/ContextualMenu";
 
 
 export * from '../../layouts/TemplateLayout';

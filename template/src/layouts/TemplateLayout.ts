@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { customElement } from 'lit/decorators.js';
+import '@commons/Components';
 import '@commons/structures/Header';
 import '@commons/structures/Footer';
 import '@commons/title/Title';
@@ -58,9 +59,10 @@ export class TemplateLayout extends LitElement {
                 <app-navigation-bar>
                     <app-title level=1>Header templates</app-title>
                     <app-container class="row p-1">
-                        <app-icon-info class="m-0"></app-icon-info>
+                        <app-icon-info id="app-icon-info-main" class="m-0"></app-icon-info>
                         <app-label class="bold">Selecciona el color:</app-label>
                         <app-input @color-changed="${this.setColor}" type="color"></app-input>
+                        <app-contextual-menu for="app-icon-info-main"></app-contextual-menu>
                     </app-container> 
                     <app-container class="p-2">
                         <app-button class="bold">Button</app-button>
