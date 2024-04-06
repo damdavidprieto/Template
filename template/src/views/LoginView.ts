@@ -1,19 +1,9 @@
 import { LitElement, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import '../layouts/TemplateLayout';
-import '../components/commons/container/Container';
-import '../components/commons/container/Panel';
-import '../components/commons/container/PanelColor';
-import '../components/composes/Template/panels/ButtonsPanel';
-import '../components/composes/Template/panels/InputsPanel';
-import '../components/commons/icons/Info';
-import '../components/composes/Template/panels/IconsPanel';
-import '../components/commons/cards/Card';
-import '../layouts/LoginLayout';
-import '../components/commons/icons/Preferences';
+import '../components/commons/Components';
 
-@customElement('app-empty-view')
-export class EmptyView extends LitElement {
+@customElement('app-login-view')
+export class LoginView extends LitElement {
     render() {
         return html`
             <app-login-layout>

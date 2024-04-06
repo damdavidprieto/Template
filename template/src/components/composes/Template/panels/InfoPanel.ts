@@ -27,7 +27,7 @@ export class InfoPanel extends LitElement {
     }
     render() {
         return html`        
-            <app-panel-color class="f column" @panel-color-changed="${this.handlerPanelColorChange}" titlePanel="Icon Panel">
+            <app-panel-color class="f column m-auto" @panel-color-changed="${this.handlerPanelColorChange}" titlePanel="Icon Panel">
                 <app-form-info infoLabel="" class="bold">FORM INFO</app-form-info>
                 <app-form-info infoLabel="TEST" class="bold">FORM INFO</app-form-info>
                 <app-form-info infoLabel="TEST" class="bold">FORM INFO</app-form-info>
