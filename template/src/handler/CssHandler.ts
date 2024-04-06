@@ -1,7 +1,7 @@
 import { LitElement } from 'lit-element';
 
 export class CssHandler extends LitElement {
-    private static root: HTMLElement = document.documentElement;
+    //private static root: HTMLElement = document.documentElement;
 /*     static setVariable(name: string, value: string) {
       this.root.style.setProperty(`--${name}`, value);
     }

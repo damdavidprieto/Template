@@ -3,7 +3,7 @@ import { customElement, property } from 'lit/decorators.js'
 import { classStyles } from '../../../styles/ClassStyles';
 
 @customElement('app-input')
-export class Intput extends LitElement {
+export class Input extends LitElement {
     @property({type:String})
     type!: "text" | "radio" | "file" | "range" | "checkbox" | "password" | "email" | "number" | "date" | "datetime-local" | "month" | "week" | "color";
 
