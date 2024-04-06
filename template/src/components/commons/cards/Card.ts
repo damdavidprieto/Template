@@ -12,7 +12,7 @@ export class Card extends LitElement {
         css`
             :host {
                 border-radius: 20px;
-                padding: 15px 30px 30px 30px;
+                padding: 10px 10px 10px 10px;
                 background-color: var(--primary-color);
                 box-shadow: var(--box-shadow);
                 width:fit-content;
@@ -20,6 +20,10 @@ export class Card extends LitElement {
                 display:flex;
                 flex-direction:column;
                 min-width:30%;
+            }
+            app-title{
+                border-radius: 10px;
+                background-color: #006907b6;
             }
         `,
         classStyles
