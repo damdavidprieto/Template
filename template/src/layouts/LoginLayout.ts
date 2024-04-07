@@ -12,6 +12,7 @@ import '@commons/icons/Info';
 import '@commons/drawer/Drawer';
 import '../components/commons/label/CurrentDateTime';
 import '../components/commons/forms/FormInfo';
+import '../components/composes/login/LoginContent';
 
 @customElement('app-login-layout')
 export class LoginLayout extends LitElement {
@@ -55,7 +56,11 @@ export class LoginLayout extends LitElement {
     }
 
     render() {
-        const options = ["Option 1", "Option 2", "Option 3"] as string[]; 
+        const options: KeyValue[] = [
+            { key: 1, value: "Uno" },
+            { key: 2, value: "Dos" },
+            { key: 3, value: "Tres" }
+        ];
         return html`
             <app-header>
                 <app-navigation-bar>
