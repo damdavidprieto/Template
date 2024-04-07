@@ -18,8 +18,11 @@ export class Card extends LitElement {
                 width:fit-content;
                 gap:1rem;
                 display:flex;
-                flex-direction:column;
+                flex-direction:column!important;
                 min-width:50%;
+            }
+            :host(.row) app-container{
+                flex-direction: row;              
             }
             app-title{
                 border-radius: 10px;
