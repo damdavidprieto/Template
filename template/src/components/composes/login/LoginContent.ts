@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit';
-import { customElement } from 'lit/decorators.js'
+import { customElement, property } from 'lit/decorators.js'
+import LoginStore from '../../../stores/LoginStore';
 
 @customElement('app-login-content')
 export class LoginContent extends LitElement {
@@ -12,6 +13,16 @@ export class LoginContent extends LitElement {
             }
         `
     ];
+
+    @property({ type: Number }) 
+    state = 0;
+
+    connectedCallback(): void {
+        super.connectedCallback();
+        LoginStore.subscribe((store) => {
+            this.state = store.state;
+        });
+    }
 
     _renderCardLoginColumn(){
         return html`
@@ -31,7 +42,6 @@ export class LoginContent extends LitElement {
           </app-card> 
         `;
     }
-
     _renderCardLoginRow(){
         return html`
           <app-card titleCard="Login" class="m-auto row">
@@ -67,7 +77,6 @@ export class LoginContent extends LitElement {
           </app-card> 
         `;
     }
-
     _renderCardLoginRememberPasswordRow(){
         return html`
           <app-card titleCard="Recordar Contraseña" class="m-auto row">
@@ -101,7 +110,6 @@ export class LoginContent extends LitElement {
           </app-card> 
         `;
     }
-
     _renderCardLoginUpdatePasswordRow(){
         return html`
           <app-card titleCard="Actualizar contraseña" class="m-auto row">
@@ -155,17 +163,25 @@ export class LoginContent extends LitElement {
     }
 
     render() {
-        return html`
-                <app-container class="f column">
-                  ${this._renderCardLoginColumn()} 
-                  ${this._renderCardLoginRow()}               
-                  ${this._renderCardLoginRememberPasswordColumn()} 
-                  ${this._renderCardLoginRememberPasswordRow()}
-                  ${this._renderCardLoginUpdatePasswordColumn()}
-                  ${this._renderCardLoginUpdatePasswordRow()} 
-                  ${this._renderCardLoginChangePasswordColumn()}
-                  ${this._renderCardLoginChangePasswordRow()}               
-                </app-container> 
-            `;
+        switch (this.state.toString()) {
+            case "0":
+                return this._renderCardLoginColumn();
+            case "1":
+                return this._renderCardLoginRow();
+            case "2":
+                return this._renderCardLoginRememberPasswordColumn();
+            case "3":
+                return this._renderCardLoginRememberPasswordRow();
+            case "4":
+                return this._renderCardLoginUpdatePasswordColumn();
+            case "5":
+                return this._renderCardLoginUpdatePasswordRow();
+            case "6":
+                return this._renderCardLoginChangePasswordColumn();
+            case "7":
+                return this._renderCardLoginChangePasswordRow();
+            default:
+                return html``;
+        }
     }
 }
