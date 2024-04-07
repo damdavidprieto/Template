@@ -1,20 +1,28 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import { classStyles } from '../../../styles/ClassStyles';
+import { constantStyles } from '../../../styles/ConstantStyles';
+import { colorStyles } from '../../../styles/ColorStyles';
 
 @customElement('app-contextual-menu')
 export class ContextualMenu extends LitElement {
-    static styles = css`
+    static styles = [
+        colorStyles,
+        constantStyles,
+        css`
         :host {
             display: block;
             position: absolute;
-            background-color: white;
-            border: 1px solid #ccc;
-            padding: 5px;
+            background-color: #242424;
+            border: 0px solid #ccc;
             z-index: 100; /* Asegura que el menú se muestre encima de otros elementos */
             display: none; /* Inicialmente oculto */
             color:black;
+            border-radius:0px;
+            box-shadow:var(--box-shadow);
         }
-    `;
+    `,
+        classStyles];
 
     @property({ type: String }) 
     for: string = '';
