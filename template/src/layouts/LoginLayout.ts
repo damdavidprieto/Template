@@ -55,19 +55,13 @@ export class LoginLayout extends LitElement {
     }
 
     render() {
+        const options = ["Option 1", "Option 2", "Option 3"] as string[]; 
         return html`
             <app-header>
-                <!-- <app-drawer>
-
-                </app-drawer> -->
                 <app-navigation-bar>
                     <app-title level=1>Login template</app-title>
-                    <app-container class="row p-1 a-center">
-                        <app-icon-info class="m-0"></app-icon-info>
-                        <app-label class="bold">Selecciona el color:</app-label>
-                        <app-input @color-changed="${this.setColor}" type="color"></app-input>
-                        <current-date-time class="bold f row"></current-date-time>
-                        <app-form-info infoLabel="TEST" class="bold">FORM INFO</app-form-info>
+                    <app-container class="row p-1 a-center end">
+                        <app-select .options="${options}"></app-select>
                     </app-container>
                 </app-navigation-bar>
             </app-header>

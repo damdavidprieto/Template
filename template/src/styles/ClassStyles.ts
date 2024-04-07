@@ -13,8 +13,14 @@ export const classStyles = css`
     :host(.center){
         justify-content: center;
     }
+    :host(.end){
+        justify-content: end;
+    }
     :host(.a-center){
         align-items: center;
+    }
+    :host(.a-end){
+        align-items: end;
     }
     :host(.row){
         flex-direction: row;
