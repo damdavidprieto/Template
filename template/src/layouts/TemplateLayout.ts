@@ -63,9 +63,9 @@ export class TemplateLayout extends LitElement {
                         <app-label class="bold">Selecciona el color:</app-label>
                         <app-input @color-changed="${this.setColor}" type="color"></app-input>
                         <app-contextual-menu for="app-icon-info-main">
-                            <label>Acción 1</label>
-                            <label>Acción 2</label>
-                            <label>Acción 3</label>
+                            <app-contextual-menu-item>Acción 1</app-contextual-menu-item>
+                            <app-contextual-menu-item>Acción 2</app-contextual-menu-item>
+                            <app-contextual-menu-item>Acción 3</app-contextual-menu-item>
                         </app-contextual-menu>
                     </app-container> 
                     <current-date-time class="bold f row"></current-date-time>
