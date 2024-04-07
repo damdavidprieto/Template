@@ -13,8 +13,8 @@ export class LoginView extends LitElement {
                       <app-icon-preferences title="tooltip de prueba" size="200"></app-icon-preferences>
                     </app-container>
                     <app-panel class="w-full" titlePanel="Usuario">
-                        <app-input placeholder="Usuario" type="text"></app-input>
-                        <app-input placeholder="Contraseña" type="text"></app-input>
+                        <app-form-control placeholder="Usuario" type="text">Usuario:</app-form-control>
+                        <app-form-control placeholder="Contraseña" type="text">Contraseña:</app-form-control>
                     </app-panel>
                     <app-button class="success">Login</app-button>
                   </app-card>                  
