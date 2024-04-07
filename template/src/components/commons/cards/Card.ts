@@ -19,11 +19,26 @@ export class Card extends LitElement {
                 gap:1rem;
                 display:flex;
                 flex-direction:column;
-                min-width:30%;
+                min-width:50%;
             }
             app-title{
                 border-radius: 10px;
                 background-color: #006907b6;
+            }
+            @media (min-width: 700px) {
+                :host {
+                    min-width: 40%;
+                }
+            }
+            @media (min-width: 1200px) {
+                :host {
+                    min-width: 30%;
+                }
+            }
+            @media (min-width: 1600px) {
+                :host {
+                    min-width: 20%;
+                }
             }
         `,
         classStyles
