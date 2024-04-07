@@ -1,3 +1,4 @@
+export { Home } from "./icons/Home";
 export { Select } from "./select/Select";
 export { ContextualMenuItem } from "./contextualMenu/ContextualMenuItem";
 export { ContextualMenu } from "./contextualMenu/ContextualMenu";
@@ -46,6 +47,7 @@ export * from "./forms/Form";
 export * from "./forms/FormControl";
 export * from "./forms/FormInfo";
 export * from "./hyperlink/Hyperlink";
+export * from "./icons/Home";
 export * from "./icons/Info";
 export * from "./icons/File";
 export * from "./icons/Lock";

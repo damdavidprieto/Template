@@ -8,14 +8,12 @@ export class LoginView extends LitElement {
         return html`
             <app-login-layout>
                 <app-container class="column">
-                  <app-card titleCard="Credenciales" class="m-auto">
+                  <app-card titleCard="Login" class="m-auto">
                     <app-container>
-                      <app-icon-preferences title="tooltip de prueba" size="200"></app-icon-preferences>
+                      <app-home-icon title="tooltip de prueba" size="200"></app-home-icon>
                     </app-container>
-                    <app-panel class="w-full" titlePanel="Usuario">
-                        <app-form-control placeholder="Usuario" type="text">Usuario:</app-form-control>
-                        <app-form-control placeholder="Contraseña" type="text">Contraseña:</app-form-control>
-                    </app-panel>
+                      <app-form-control placeholder="Usuario" type="text">Usuario:</app-form-control>
+                      <app-form-control placeholder="Contraseña" type="text">Contraseña:</app-form-control>
                     <app-button class="success">Login</app-button>
                   </app-card>                  
                 </app-container>     
