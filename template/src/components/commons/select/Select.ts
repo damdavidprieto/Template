@@ -28,7 +28,7 @@ export class Select extends LitElement {
         const selectElement = event.target as HTMLSelectElement;
         this.selectedOption = selectElement.value;
         this.dispatchEvent(new CustomEvent('option-selected', {
-            detail: { selectedOption: this.selectedOption },
+            detail: { key: this.selectedOption },
             bubbles: true,
             composed: true
         }));
