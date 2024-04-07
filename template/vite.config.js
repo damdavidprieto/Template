@@ -25,7 +25,7 @@ export default () => {
             rollupOptions:{
                 input:{
                     main:resolve(__dirname,'src/index.html'),
-                    input:resolve(__dirname,'src/empty.html')
+                    input:resolve(__dirname,'src/login.html')
                 }
             }
         }
