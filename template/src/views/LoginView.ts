@@ -16,6 +16,7 @@ export class LoginView extends LitElement {
                       <app-form-row>
                         <app-form-control class="bold" placeholder="Usuario" type="text">Usuario:</app-form-control>
                         <app-form-control class="bold" placeholder="Contraseña" type="password">Contraseña:</app-form-control>
+                        <app-form-control placeholder="Contraseña" type="checkbox">Recordarme</app-form-control>
                       </app-form-row>
                       <app-button class="success bold">Login</app-button>
                     </app-form>

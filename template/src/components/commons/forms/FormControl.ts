@@ -14,15 +14,29 @@ export class FormControl extends LitElement {
             :host {
                 display: block;
             }
+            :host([type="checkbox"]) {
+                display: flex;
+                flex-direction: row;
+            }
+            :host([type="checkbox"]) app-input {
+                width: auto;
+            }
         `
         ,
         classStyles
     ];
 
     render() {
-        return html`
-            <app-label><slot></slot></app-label>
-            <app-input type="${this.type}" placeholder="${this.placeholder}"></app-input>
-        `;
+        if(this.type === "checkbox"){
+            return html`
+                <app-input class="w-auto" type="${this.type}" placeholder="${this.placeholder}"></app-input>
+                <app-label><slot></slot></app-label>
+            `;
+        }else{
+            return html`
+                <app-label><slot></slot></app-label>
+                <app-input type="${this.type}" placeholder="${this.placeholder}"></app-input>
+            `;
+        }
     }
 }
