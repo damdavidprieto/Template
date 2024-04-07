@@ -16,7 +16,7 @@ export class NavigationBar extends LitElement {
                 width: 100%;
                 gap: 1rem;
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
             }
             @media (min-width: 1280px) {
                 nav {
