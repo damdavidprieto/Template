@@ -1,4 +1,4 @@
-export { Select } from "./select/Select";
+/* export { Select } from "./select/Select";
 export { ContextualMenuItem } from "./contextualMenu/ContextualMenuItem";
 export { ContextualMenu } from "./contextualMenu/ContextualMenu";
 export { Button } from "./buttons/Button";
@@ -83,3 +83,4 @@ export * from '../commons/cards/Card';
 export * from '../composes/Template/panels/InfoPanel';
 
 
+ */

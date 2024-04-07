@@ -12,9 +12,6 @@ export class ContextualMenu extends LitElement {
             padding: 5px;
             z-index: 100; /* Asegura que el menú se muestre encima de otros elementos */
             display: none; /* Inicialmente oculto */
-        }
-        label
-        {
             color:black;
         }
     `;
@@ -80,10 +77,7 @@ export class ContextualMenu extends LitElement {
     render() {
         return html`
             <div class="context-menu">
-                <!-- Aquí puedes agregar los elementos del menú contextual -->
-                <label>Acción 1</label>
-                <label>Acción 2</label>
-                <label>Acción 3</label>
+                <slot></slot>
             </div>
         `;
     }

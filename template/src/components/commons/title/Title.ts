@@ -10,7 +10,8 @@ export class Title extends LitElement {
     static styles = [
         css`
             :host {
-                display: block;
+                display: flex;
+                align-items: center;
             }
             h1, h2, h3, h4, h5 {
                 white-space: nowrap;
