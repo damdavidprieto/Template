@@ -19,6 +19,12 @@ export class Input extends LitElement {
                 min-width: auto;
                 max-width: -webkit-fill-available;            
             }
+            :host([type="checkbox"]) input {
+                max-width: auto;
+                min-width: auto;   
+                min-height: auto;
+                max-height: auto;
+            }
             :host(.w-auto) input{
                 width: auto;              
             }
@@ -42,17 +48,35 @@ export class Input extends LitElement {
                     min-width: 150px;
                     max-width:  -webkit-fill-available;
                 }
+                :host([type="checkbox"]) {
+                    max-width: auto;
+                    min-width: auto;   
+                    min-height: auto;
+                    max-height: auto;
+                }
             }
             @media (min-width: 1200px) {
                 :host {
                     min-width: 150px;
                     max-width: -webkit-fill-available;
                 }
+                :host([type="checkbox"]) {
+                    max-width: auto;
+                    min-width: auto;   
+                    min-height: auto;
+                    max-height: auto;
+                }
             }
             @media (min-width: 1600px) {
                 :host {
                     min-width: 150px;
                     max-width: -webkit-fill-available;
+                }
+                :host([type="checkbox"]) {
+                    max-width: auto;
+                    min-width: auto;   
+                    min-height: auto;
+                    max-height: auto;
                 }
             }
         `,
