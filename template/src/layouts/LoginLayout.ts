@@ -19,7 +19,7 @@ export class LoginLayout extends LitElement {
         css`
             :host {
                 display: grid;
-                grid-template-rows: 14% 1fr;
+                grid-template-rows: fit-content(5%) 1fr;
             }
             main{
                 overflow-y:scroll;
@@ -28,7 +28,7 @@ export class LoginLayout extends LitElement {
             }
             @media (max-width: 366px) {
                 :host {
-                    grid-template-rows: fit-content(10%) 1fr;
+                    grid-template-rows: fit-content(5%) 1fr;
                 }
                 main{
                     overflow-y:scroll;
