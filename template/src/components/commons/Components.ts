@@ -1,3 +1,5 @@
+export { FormGroup } from "./forms/FormGroup";
+export { FormRow } from "./forms/FormRow";
 export { Home } from "./icons/Home";
 export { Select } from "./select/Select";
 export { ContextualMenuItem } from "./contextualMenu/ContextualMenuItem";
@@ -34,6 +36,8 @@ export { Title } from "./title/Title";
 export { Toast } from "./toast/Toast";
 export { Tooltip } from "./tooltip/tooltip";
 
+export * from "./forms/FormGroup";
+export * from "./forms/FormRow";
 export * from "./select/Select";
 export * from "./buttons/Button";
 export * from "./cards/Card";

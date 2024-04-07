@@ -16,8 +16,8 @@ export class Input extends LitElement {
                 display: flex;
                 min-height: 30px; 
                 max-height: 30px;
-                min-width: 150px;
-                max-width: 300px;            
+                min-width: auto;
+                max-width: -webkit-fill-available;            
             }
             :host(.w-auto) input{
                 width: auto;              
@@ -36,6 +36,24 @@ export class Input extends LitElement {
                 outline: none;
                 border: 1px solid #fa0000;
                 box-shadow: 0 0 10px #fa0000;
+            }            
+            @media (min-width: 700px) {
+                :host {
+                    min-width: 150px;
+                    max-width:  -webkit-fill-available;
+                }
+            }
+            @media (min-width: 1200px) {
+                :host {
+                    min-width: 150px;
+                    max-width: -webkit-fill-available;
+                }
+            }
+            @media (min-width: 1600px) {
+                :host {
+                    min-width: 150px;
+                    max-width: -webkit-fill-available;
+                }
             }
         `,
         classStyles
