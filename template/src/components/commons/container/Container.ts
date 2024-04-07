@@ -11,6 +11,7 @@ export class Container extends LitElement {
                 flex-direction: column;
                 gap: 10px;
                 width: -webkit-fill-available;
+                height: -webkit-fill-available;
             }
             @media (max-width: 366px) {
                 :host {

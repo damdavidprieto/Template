@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js'
+import { classStyles } from '../../../styles/ClassStyles';
 
 @customElement('app-form-control')
 export class FormControl extends LitElement {
@@ -14,6 +15,8 @@ export class FormControl extends LitElement {
                 display: block;
             }
         `
+        ,
+        classStyles
     ];
 
     render() {
